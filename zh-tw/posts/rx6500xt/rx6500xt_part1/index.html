@@ -1,0 +1,582 @@
+<!doctype html><html lang="zh-tw"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1 - Hugo Bootstrap</title><link rel="apple-touch-icon" href="/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/images/icons/favicon.ico">
+<link rel="manifest" href="/zh-tw/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="" /><meta itemprop="name" content="[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1">
+<meta itemprop="description" content="前文 晶片短缺，掘礦熱潮，黃牛炒賣等因素影響下，顯示卡價 格已居高不下多時，要入手顯示卡實在頭痛！ 極不幸地 Sapphire R7 360 幾個月前開機經常沒有畫面，近來越"><meta itemprop="datePublished" content="2022-01-30T01:28:33+08:00" />
+<meta itemprop="dateModified" content="2022-01-30T01:28:33+08:00" />
+<meta itemprop="wordCount" content="757">
+<meta itemprop="keywords" content="開箱,評測,顯示卡,PC," /><meta property="og:title" content="[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1" />
+<meta property="og:description" content="前文 晶片短缺，掘礦熱潮，黃牛炒賣等因素影響下，顯示卡價 格已居高不下多時，要入手顯示卡實在頭痛！ 極不幸地 Sapphire R7 360 幾個月前開機經常沒有畫面，近來越" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/zh-tw/posts/rx6500xt/rx6500xt_part1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-30T01:28:33+08:00" />
+<meta property="article:modified_time" content="2022-01-30T01:28:33+08:00" /><meta property="og:site_name" content="Hugo Bootstrap" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1"/>
+<meta name="twitter:description" content="前文 晶片短缺，掘礦熱潮，黃牛炒賣等因素影響下，顯示卡價 格已居高不下多時，要入手顯示卡實在頭痛！ 極不幸地 Sapphire R7 360 幾個月前開機經常沒有畫面，近來越"/>
+<meta name="robots" content="index, follow" /><link rel="stylesheet" href="/css/main.min.c2df0a880ce1d651bf593b795b45f84db7817fa5f298b67a19f3e7946f08cbd4.css" integrity="sha256-wt8KiAzh1lG/WTt5W0X4TbeBf6XymLZ6GfPnlG8Iy9Q=" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous"></head>
+  <body><script>const items=["mode","palette"];items.forEach(function(e){const t=localStorage.getItem("hbs-"+e);t&&document.body.parentElement.setAttribute("data-"+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand me-3" href="/zh-tw/"><img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy"
+   width="512" height="512"
+   />
+FossilPC
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=%5b%e9%96%8b%e7%ae%b1%5d%20%20ASUS%20TUF%20Gaming%20RX%206500%20XT%20%20%e5%ae%89%e8%a3%9d%e5%9c%a8B350%e5%8f%aa%e6%9c%89PCIe%203.0%e5%ba%95%e6%9d%bf%e9%82%84%e5%8f%af%e4%bb%a5%e6%b5%81%e6%9a%a2%e7%8e%a9%e9%81%8a%e6%88%b2%e5%97%8e%3fPart%201&url=%2fzh-tw%2fposts%2frx6500xt%2frx6500xt_part1%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2fzh-tw%2fposts%2frx6500xt%2frx6500xt_part1%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">設置</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-language"></i> 語言</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="dropdown">
+        <a class="btn btn-sm btn-outline-primary dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          繁體中文
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"><li><a class="dropdown-item" href="/en/">English</a></li></ul>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+<section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> 模式</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="藍色"
+        class="btn btn-sm palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="藍灰色"
+        class="btn btn-sm palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="棕色"
+        class="btn btn-sm palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="青色"
+        class="btn btn-sm palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="綠色"
+        class="btn btn-sm palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="靛青色"
+        class="btn btn-sm palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="橙色"
+        class="btn btn-sm palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="粉色"
+        class="btn btn-sm palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="紫色"
+        class="btn btn-sm palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="紅色"
+        class="btn btn-sm palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="藍綠色"
+        class="btn btn-sm palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="黃色"
+        class="btn btn-sm palette" data-palette="yellow">
+      </button></div>
+</section>
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 刷新
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> 複製連結
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 分享
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="/zh-tw/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/series/">
+            <i class="fas fa-fw fa-columns"></i>Series
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>Archives
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/categories/">
+            <i class="fas fa-fw fa-folder"></i>Categories
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/tags/">
+            <i class="fas fa-fw fa-tags"></i>Tags
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-fw fa-chevron-circle-down"></i>Support
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownSupport"><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">
+                Repository
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap/discussions/new" target="_blank" rel="noopener noreferrer">
+                Discussions
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=feature_request.md" target="_blank" rel="noopener noreferrer">
+                Features Request
+              </a>
+            </li><li><hr class="dropdown-divider"></li><li>
+              <a class="dropdown-item"
+                href="/zh-tw/faq/">
+                FAQs
+              </a>
+            </li></ul>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/zh-tw/">主頁</a></li><li class="breadcrumb-item"><a href="/zh-tw/posts/">Posts</a></li><li class="breadcrumb-item active">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1</li></ol>
+  </div>
+</nav><article class="row card component mb-4 post"><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    
+    <a class="action" href="#post-copyright" role="button" aria-label="Copyright" title="Copyright">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    <a class="action" href="#post-comments" role="button" aria-label="Comments" title="Comments">
+  <i class="fas fa-fw fa-comments"></i>
+</a>
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<div class="card-header ">
+    <h1 class="card-title post-title">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="創建於 2022-01-30 01:28:33 &#43;0800 HKT。">
+    2022-01-30
+  </span><span class="post-reading-time">
+    2 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="/zh-tw/tags/%E9%96%8B%E7%AE%B1/" class="badge rounded-pill post-taxonomy">開箱</a><a href="/zh-tw/tags/%E8%A9%95%E6%B8%AC/" class="badge rounded-pill post-taxonomy">評測</a><a href="/zh-tw/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/" class="badge rounded-pill post-taxonomy">顯示卡</a><a href="/zh-tw/tags/pc/" class="badge rounded-pill post-taxonomy">PC</a></span>
+</div>
+<div class="post-toc mb-4" id="postTOC">
+  <h2 class="mb-4">目錄</h2>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前文">前文</a></li>
+    <li><a href="#開箱">開箱</a></li>
+    <li><a href="#規格">規格</a></li>
+  </ul>
+</nav>
+</div><div class="post-content mb-3"><h2 id="前文">前文<a class="anchor ms-1" href="#前文"><i class="fas fa-link"></i></a></h2>
+<p>晶片短缺，掘礦熱潮，黃牛炒賣等因素影響下，顯示卡價
+格已居高不下多時，要入手顯示卡實在頭痛！</p>
+<p>極不幸地 Sapphire R7 360 幾個月前開機經常沒有畫面，近來越發頻繁，無何奈何只好入手一張新的。因預算不足又不想買到二手礦卡，所以選擇了於1月新發佈的ASUS TUF Gaming RX 6500 XT。時隔6年的升級，用在只有PCIe 3.0的B350底板上到底會帶來多少提升?</p>
+<h2 id="開箱">開箱<a class="anchor ms-1" href="#開箱"><i class="fas fa-link"></i></a></h2>
+<p>TUF Gaming RX 6500 XT OC 4GB 包裝正面，印有一些卡的基本資料， 適合1080p遊戲, 4GB GDDR6 VRAM, 對應 AURA SYNC, PCIe 4.0</p>
+<p><img class="img-fluid" alt="unbox" src="/images/media/rx6500xt/unbox.png" loading="lazy"
+   width="1920" height="1081"
+   />
+
+</p>
+<p>包裝背面，印有更詳細的資料<br>
+<img class="img-fluid" alt="qownnotes-media-PeOTGg" src="/images/media/rx6500xt/qownnotes-media-PeOTGg.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>內紙盒，除了燙金ASUS字樣外還有ASUS的紋理<br>
+<img class="img-fluid" alt="qownnotes-media-wuzvua" src="/images/media/rx6500xt/qownnotes-media-wuzvua.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>打開紙盒，首先看見一樣印有燙金ASUS的紙卡套<br>
+<img class="img-fluid" alt="qownnotes-media-uuyumc" src="/images/media/rx6500xt/qownnotes-media-uuyumc.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>紙卡套裹放有感謝卡，說明書和保養卡<br>
+<img class="img-fluid" alt="qownnotes-media-zgxiDs" src="/images/media/rx6500xt/qownnotes-media-zgxiDs.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>再下層就是防靜電袋包覆的顯示卡<br>
+<img class="img-fluid" alt="qownnotes-media-CyKUce" src="/images/media/rx6500xt/qownnotes-media-CyKUce.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+
+<img class="img-fluid" alt="qownnotes-media-YRYlmy" src="/images/media/rx6500xt/qownnotes-media-YRYlmy.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>拆袋就是本文的主⻆ ASUS TUF Gaming RX 6500 XT
+雙風扇, 金屬前背板, 背板有拉絲表面處理 看上去更高貴<br>
+<img class="img-fluid" alt="qownnotes-media-KKGTgV" src="/images/media/rx6500xt/qownnotes-media-KKGTgV.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+
+<img class="img-fluid" alt="qownnotes-media-OxgokY" src="/images/media/rx6500xt/qownnotes-media-OxgokY.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>正上方可看到 6PIN供電按口, RGB燈設在TUF Logo和斜面上的小直條
+<img class="img-fluid" alt="qownnotes-media-MBaywN" src="/images/media/rx6500xt/qownnotes-media-MBaywN.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>雙 9.5cm 軸向式風扇, 扇葉和外圍圓環相連, 加強氣流輔助散熱<br>
+低負載時保持靜止，減低噪音。當溫度高於57°C開轉動，并於溫度降至50°C才停轉，避免風扇頻煩重啟
+<img class="img-fluid" alt="qownnotes-media-wRmsrr" src="/images/media/rx6500xt/qownnotes-media-wRmsrr.png" loading="lazy"
+   width="1380" height="536"
+   />
+
+</p>
+<p>4導熱管和大面積散熱鰭片，用在功耗和發熱都不高的 6500 XT 實在是殺雞用牛刀！顯示卡在高負載下也能保持十分低溫<br>
+<img class="img-fluid" alt="qownnotes-media-tpxsJF" src="/images/media/rx6500xt/qownnotes-media-tpxsJF.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>雖然擁有x16金手指，不過實際上只有x4的通道有接通<br>
+<img class="img-fluid" alt="qownnotes-media-jFdXlt" src="/images/media/rx6500xt/qownnotes-media-jFdXlt.png" loading="lazy"
+   width="1080" height="405"
+   />
+
+</p>
+<p>輸出port為HDMI 2.1和 DisplayPort 1.4a 各一<br>
+只能接駁兩台螢幕<br>
+<img class="img-fluid" alt="qownnotes-media-DGuMJS" src="/images/media/rx6500xt/qownnotes-media-DGuMJS.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>新舊卡合照<br>
+<img class="img-fluid" alt="qownnotes-media-VFNQpH" src="/images/media/rx6500xt/qownnotes-media-VFNQpH.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>上機! 由於卡有2.7 slot厚, 所以主板的第三Slot的PCIe x4槽會被阻檔<br>
+<img class="img-fluid" alt="qownnotes-media-CpuiYW" src="/images/media/rx6500xt/qownnotes-media-CpuiYW.png" loading="lazy"
+   width="1080" height="608"
+   />
+
+</p>
+<p>不插上電源的話傍邊的led會亮起<br>
+<img class="img-fluid" alt="DSCF1304" src="/images/media/rx6500xt/DSCF1304.jpg" loading="lazy"
+   width="6240" height="3512"
+   />
+
+</p>
+<p>開機  全機唯一RGB設備，之後應該也會關掉RGB<br>
+<img class="img-fluid" alt="qownnotes-media-PlFIaY" src="/images/media/rx6500xt/qownnotes-media-PlFIaY.gif" loading="lazy"
+   width="654" height="368"
+   />
+
+</p>
+<h2 id="規格">規格<a class="anchor ms-1" href="#規格"><i class="fas fa-link"></i></a></h2>
+<p>GPU-Z 左為RX 6500 XT ，右為R7 360<br>
+<img class="img-fluid" alt="2" src="/images/media/rx6500xt/2-1.gif" loading="lazy"
+   width="776" height="539"
+   />
+
+</p>
+<p>這卡最尷尬的是<strong>PCIe 4.0 x4</strong>，如果像本文一樣用在只有PCIe 3.0的主板，也只能跑<strong>PCIe 3.0 x4</strong> ，令效能下降。</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>PCIe 版本</th>
+<th>x4 頻寬</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0</td>
+<td>3.94 GB/s</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>7.88 GB/s</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>支援 H254, HEVC(H265), VP9解碼，至於明日新星 AV1就欠缺了<br>
+另外要特別注意的是<strong>不支援任何編碼</strong>!<br>
+<img class="img-fluid" alt="dxva_decode" src="/images/media/rx6500xt/dxva_decode.JPG" loading="lazy"
+   width="626" height="544"
+   />
+
+</p>
+</div>
+<div class="post-copyright mb-3" id="post-copyright">
+    <h2 class="mb-4">版權</h2><a class="d-flex align-items-center flex-column" target="_blank" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">
+  <span><i class="fab fa-fw fa-2x fa-creative-commons"></i><i class="fab fa-fw fa-2x fa-creative-commons-by"></i><i class="fab fa-fw fa-2x fa-creative-commons-nc"></i><i class="fab fa-fw fa-2x fa-creative-commons-nd"></i></span>
+  CC BY-NC-ND 4.0 
+</a>
+
+
+</div>
+</div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly">
+  <div class="post-nav post-prev"><i class="fas fa-fw fa-chevron-left"></i>
+    <a href="/zh-tw/about/">About
+</a>
+  </div><div class="post-nav post-next">
+    <a href="/zh-tw/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
+</a>
+    <i class="fas fa-fw fa-chevron-right"></i>
+  </div></div></div>
+</article><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">相關文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/zh-tw/about/">About
+</a>
+          <span class="float-end post-date">2019-02-28
+</span>
+        </li><li>
+          <a href="/zh-tw/contact/">Contact Us
+</a>
+          <span class="float-end post-date">0001-01-01
+</span>
+        </li><li>
+          <a href="/zh-tw/faq/">FAQs
+</a>
+          <span class="float-end post-date">0001-01-01
+</span>
+        </li><li>
+          <a href="/zh-tw/offline/">Offline
+</a>
+          <span class="float-end post-date">0001-01-01
+</span>
+        </li></ul>
+    </div>
+  </section><div class="card component row post-comments" id="post-comments">
+  <div class="card-header">
+    <h2 class="card-title">評論</h2>
+  </div>
+  <div class="card-body"><script src="https://utteranc.es/client.js"
+  repo="razonyang/hugo-theme-bootstrap-comments"
+  issue-term="pathname"
+  label="comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div>
+</div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container">
+    
+    <section class="card row text-center profile component">
+  <div class="card-body">
+    <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" alt="FossilTV" src="/images/profile.webp" loading="lazy"
+   width="512" height="512"
+   />
+</div>
+    <div class="col-12 profile-meta"><div class="profile-name">FossilTV</div><div class="profile-bio">科技愛好者</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Hong Kong</div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="/zh-tw/about/">About</a></div><div class="profile-contact"><i class="fas fa-fw fa-question-circle"></i><a href="/zh-tw/contact/">Contact Us</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:fossilpcblog@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a></nav>
+</div>
+  </div>
+</section>
+  <section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">最近文章</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="/zh-tw/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
+</a>
+      </li><li>
+        <a href="/zh-tw/posts/rx6500xt/rx6500xt_part1/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1
+</a>
+      </li></ul>
+  </div>
+</section><section class="taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/zh-tw/tags">標籤</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/zh-tw/tags/pc/" class="badge rounded post-taxonomy" title="PC">
+            PC
+          </a><a href="/zh-tw/tags/%E8%A9%95%E6%B8%AC/" class="badge rounded post-taxonomy" title="評測">
+            評測
+          </a><a href="/zh-tw/tags/%E9%96%8B%E7%AE%B1/" class="badge rounded post-taxonomy" title="開箱">
+            開箱
+          </a><a href="/zh-tw/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/" class="badge rounded post-taxonomy" title="顯示卡">
+            顯示卡
+          </a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-between footer-memu mb-3"><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">support
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i>Repository
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap/discussions/new" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-comments"></i>Discussions
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=feature_request.md" target="_blank" rel="noopener noreferrer">Features Request
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=bug_report.md" target="_blank" rel="noopener noreferrer">Bug Report
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/zh-tw/contact/"><i class="fas fa-fw fa-info-circle"></i>Contact Us
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/zh-tw/faq/"><i class="fas fa-fw fa-question-circle"></i>FAQs
+</a>
+        </li></ul></li></ul><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" href="mailto:fossilpcblog@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2022 FossilPC. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div>
+<a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+</a>
+</footer>
+<script src="/js/main.min.10ec232cd356b70d2f9c7cd3a437689a0d96bf0673b547566299a6f224c4d1b8.js" integrity="sha256-EOwjLNNWtw0vnHzTpDdomg2WvwZztUdWYpmm8iTE0bg=" crossorigin="anonymous" defer></script><script src="/js/icons.min.b3391f89dcdef937e99a193c6de12584ac1d7613c16ae6ba852a096e1fd95108.js" integrity="sha256-szkfidze&#43;Tfpmhk8beElhKwddhPBaua6hSoJbh/ZUQg=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="/js/viewer.min.1721cbc2c5c34a150daae105f4ffed345a8bb269c6b63337f767c272fe6531f7.js" integrity="sha256-FyHLwsXDShUNquEF9P/tNFqLsmnGtjM392fCcv5lMfc=" crossorigin="anonymous" defer></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-6R9743VF41', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script data-ad-client="ca-pub-7671428664109324" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body>
+</html>

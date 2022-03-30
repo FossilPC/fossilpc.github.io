@@ -2,6 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/zh-tw/posts/rx6500xt/rx6500xt_part2/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+  </url><url>
+    <loc>/zh-tw/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="/zh-tw/"
+                />
+  </url><url>
+    <loc>/zh-tw/tags/pc/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+  </url><url>
+    <loc>/zh-tw/posts/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+  </url><url>
+    <loc>/zh-tw/tags/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="/zh-tw/tags/"
+                />
+  </url><url>
+    <loc>/zh-tw/tags/%E8%A9%95%E6%B8%AC/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+  </url><url>
+    <loc>/zh-tw/tags/%E9%96%8B%E7%AE%B1/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+  </url><url>
+    <loc>/zh-tw/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/</loc>
+    <lastmod>2022-01-30T01:29:33+08:00</lastmod>
+  </url><url>
+    <loc>/zh-tw/posts/rx6500xt/rx6500xt_part1/</loc>
+    <lastmod>2022-01-30T01:28:33+08:00</lastmod>
+  </url><url>
     <loc>/zh-tw/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,18 +70,6 @@
   </url><url>
     <loc>/zh-tw/faq/</loc>
   </url><url>
-    <loc>/zh-tw/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="/zh-tw/"
-                />
-  </url><url>
     <loc>/zh-tw/offline/</loc>
   </url><url>
     <loc>/zh-tw/search/</loc>
@@ -49,18 +84,6 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="/zh-tw/series/"
-                />
-  </url><url>
-    <loc>/zh-tw/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="/zh-tw/tags/"
                 />
   </url>
 </urlset>

@@ -6,7 +6,26 @@
     <description>Recent content on Hugo Bootstrap</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <copyright>Copyright © 2016-{year} FossilTV. All Rights Reserved.</copyright><atom:link href="/zh-tw/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2016-{year} FossilPC. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 30 Jan 2022 01:29:33 +0800</lastBuildDate><atom:link href="/zh-tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2</title>
+      <link>/zh-tw/posts/rx6500xt/rx6500xt_part2/</link>
+      <pubDate>Sun, 30 Jan 2022 01:29:33 +0800</pubDate>
+      
+      <guid>/zh-tw/posts/rx6500xt/rx6500xt_part2/</guid>
+      <description>3DMark跑分&amp;遊戲benchmark 測試平台 CPU: AMD R7 1700 MB: ASRock AB350 Pro4 RAM: Galax HOF 3200c14 8GB x2 SSD: Plextor m9p+ 1TB PSU: Seasonic PRIME Ultra Titanium 650W CASE: Silverstone FT02 OS: WIN 10 pro 21H1 R7 360 fire strike跑分 RX 6500 XT</description>
+    </item>
+    
+    <item>
+      <title>[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1</title>
+      <link>/zh-tw/posts/rx6500xt/rx6500xt_part1/</link>
+      <pubDate>Sun, 30 Jan 2022 01:28:33 +0800</pubDate>
+      
+      <guid>/zh-tw/posts/rx6500xt/rx6500xt_part1/</guid>
+      <description>前文 晶片短缺，掘礦熱潮，黃牛炒賣等因素影響下，顯示卡價 格已居高不下多時，要入手顯示卡實在頭痛！ 極不幸地 Sapphire R7 360 幾個月前開機經常沒有畫面，近來越</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>/zh-tw/about/</link>
