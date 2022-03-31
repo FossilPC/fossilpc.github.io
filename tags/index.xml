@@ -44,5 +44,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>NAS</title>
+      <link>/tags/nas/</link>
+      <pubDate>Thu, 04 Aug 2016 11:58:00 +0800</pubDate>
+      
+      <guid>/tags/nas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synology</title>
+      <link>/tags/synology/</link>
+      <pubDate>Thu, 04 Aug 2016 11:58:00 +0800</pubDate>
+      
+      <guid>/tags/synology/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
