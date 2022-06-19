@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AdGuardHome on Hugo Bootstrap</title>
+    <link>/tags/adguardhome/</link>
+    <description>Recent content in AdGuardHome on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 20 Mar 2022 19:58:01 +0800</lastBuildDate><atom:link href="/tags/adguardhome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告</title>
+      <link>/posts/adguardhome/adguardhome1/</link>
+      <pubDate>Sun, 20 Mar 2022 19:58:01 +0800</pubDate>
+      
+      <guid>/posts/adguardhome/adguardhome1/</guid>
+      <description>RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS</description>
+    </item>
+    
+  </channel>
+</rss>

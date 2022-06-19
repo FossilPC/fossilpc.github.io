@@ -5,28 +5,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>[安裝篇] 為Mikrotik ROS安裝AdGuardHome / pi-hole 去除有害網站和廣告 - Hugo Bootstrap</title><link rel="apple-touch-icon" href="/images/icons/icon-180x180.png" sizes="180x180">
+    <title>[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告 - Hugo Bootstrap</title><link rel="apple-touch-icon" href="/images/icons/icon-180x180.png" sizes="180x180">
 <link rel="icon" href="/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="/images/icons/favicon.ico">
 <link rel="manifest" href="/manifest.json">
 <meta name="keywords" content="" />
-<meta name="description" content="RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS" /><meta name="robots" content="index, follow" /><meta itemprop="name" content="[安裝篇] 為Mikrotik ROS安裝AdGuardHome / pi-hole 去除有害網站和廣告">
+<meta name="description" content="RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS" /><meta name="robots" content="index, follow" /><meta itemprop="name" content="[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告">
 <meta itemprop="description" content="RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS"><meta itemprop="datePublished" content="2022-03-20T19:58:01+08:00" />
 <meta itemprop="dateModified" content="2022-03-20T19:58:01+08:00" />
-<meta itemprop="wordCount" content="1269">
-<meta itemprop="keywords" content="" /><meta property="og:title" content="[安裝篇] 為Mikrotik ROS安裝AdGuardHome / pi-hole 去除有害網站和廣告" />
+<meta itemprop="wordCount" content="1269"><meta itemprop="image" content="/images/media/adblock/ros_agh.webp">
+<meta itemprop="keywords" content="RouterOS,MIkrotik,AdGuardHome,Docker,過濾廣告&#34;," /><meta property="og:title" content="[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告" />
 <meta property="og:description" content="RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/adguardhome/adguardhome1/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="/posts/adguardhome/adguardhome1/" /><meta property="og:image" content="/images/media/adblock/ros_agh.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-20T19:58:01+08:00" />
 <meta property="article:modified_time" content="2022-03-20T19:58:01+08:00" /><meta property="og:site_name" content="Hugo Bootstrap" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[安裝篇] 為Mikrotik ROS安裝AdGuardHome / pi-hole 去除有害網站和廣告"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/media/adblock/ros_agh.webp"/>
+
+<meta name="twitter:title" content="[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告"/>
 <meta name="twitter:description" content="RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS"/>
-<meta property="og:image" content="/images/logo.png"/>
-  <meta name="twitter:image" content="/images/logo.png"/><link rel="stylesheet" href="/assets/main/bundle.min.b89ff33f67b45b2f1f8ae2760e27621b5956b7af64feafe968ede838f8a31102.css" integrity="sha256-uJ/zP2e0Wy8fiuJ2DidiG1lWt69k/q/paO3oOPijEQI=" crossorigin="anonymous"><link rel="stylesheet" href="/assets/viewer/bundle.min.f05183267bb952fbc8c63a7178364de2951614ab71d544ec1068ad36c7447ccc.css" integrity="sha256-8FGDJnu5UvvIxjpxeDZN4pUWFKtx1UTsEGitNsdEfMw=" crossorigin="anonymous"></head>
+<link rel="stylesheet" href="/assets/main/bundle.min.6f3cbac9e1ae3b186db164520819ea70f513120e7692972b463f92d5e8a2baf5.css" integrity="sha256-bzy6yeGuOxhtsWRSCBnqcPUTEg52kpcrRj+S1eiiuvU=" crossorigin="anonymous"><link rel="stylesheet" href="/assets/viewer/bundle.min.f05183267bb952fbc8c63a7178364de2951614ab71d544ec1068ad36c7447ccc.css" integrity="sha256-8FGDJnu5UvvIxjpxeDZN4pUWFKtx1UTsEGitNsdEfMw=" crossorigin="anonymous"></head>
   <body><script>const items=['mode','palette'];items.forEach(function(e){const t=localStorage.getItem('hbs-'+e);t&&document.body.parentElement.setAttribute('data-'+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -47,7 +48,7 @@ FossilisPC
   </div>
   <div class="offcanvas-body">
     <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
-      target="_blank" href="https://twitter.com/intent/tweet?title=%5b%e5%ae%89%e8%a3%9d%e7%af%87%5d%20%e7%82%baMikrotik%20ROS%e5%ae%89%e8%a3%9dAdGuardHome%20%2f%20pi-hole%20%e5%8e%bb%e9%99%a4%e6%9c%89%e5%ae%b3%e7%b6%b2%e7%ab%99%e5%92%8c%e5%bb%a3%e5%91%8a&url=%2fposts%2fadguardhome%2fadguardhome1%2f">
+      target="_blank" href="https://twitter.com/intent/tweet?title=%5b%e5%ae%89%e8%a3%9d%e7%af%87%5d%20%e7%82%baMikrotik%20ROS%e5%ae%89%e8%a3%9dAdGuardHome%20%e5%8e%bb%e9%99%a4%e6%9c%89%e5%ae%b3%e7%b6%b2%e7%ab%99%e5%92%8c%e5%bb%a3%e5%91%8a&url=%2fposts%2fadguardhome%2fadguardhome1%2f">
       <i class="fab fa-fw fa-twitter"></i> Twitter
     </a>
     <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
@@ -222,7 +223,7 @@ FossilisPC
 <div class="col-lg-8">
   <div class="container"><nav class="row card component" aria-label="breadcrumb">
   <div class="card-body">
-    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">[安裝篇] 為Mikrotik ROS安裝AdGuardHome / Pi-Hole 去除有害網站和廣告</li></ol>
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告</li></ol>
   </div>
 </nav><div class="post-panel-wrapper position-sticky">
   <div class="d-flex flex-column component rounded post-panel position-absolute">
@@ -251,7 +252,7 @@ FossilisPC
 </div>
 <article class="row card component mb-4 post">
   <div class="card-header ">
-    <h1 class="card-title post-title">[安裝篇] 為Mikrotik ROS安裝AdGuardHome / Pi-Hole 去除有害網站和廣告
+    <h1 class="card-title post-title">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告
 </h1>
   </div>
   <div class="card-body"><div class="post-meta">
@@ -259,11 +260,12 @@ FossilisPC
     2022-03-20
   </span><span class="post-reading-time">
     3 分鐘閱讀
-  </span><span class="post-taxonomies"></span>
+  </span><span class="post-taxonomies"><a href="/tags/routeros/" class="badge post-taxonomy">RouterOS</a><a href="/tags/mikrotik/" class="badge post-taxonomy">MIkrotik</a><a href="/tags/adguardhome/" class="badge post-taxonomy">AdGuardHome</a><a href="/tags/docker/" class="badge post-taxonomy">Docker</a><a href="/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/" class="badge post-taxonomy">過濾廣告&#34;</a></span>
 </div>
-<div class="post-content mb-3"><p>RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。
+<picture><img class="post-featured-img w-100 mb-3" alt="[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告" src="/images/media/adblock/ros_agh.webp" loading="lazy"/>
+    </picture><div class="post-content mb-3"><p>RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。
 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS功能更豐富,如安裝 AdGuard Home或Pi-hole 來過濾廣告,用戶追蹤,惡意和不良網站等!<br>
-<picture><img class="img-fluid" alt="img" src="/images/media/adblock/ros_agh.webp" loading="lazy"
+<picture><img class="img-fluid mx-auto d-block" alt="img" src="/images/media/adblock/ros_agh.webp" loading="lazy"
      width="566" height="325"
      />
 </picture>
@@ -296,8 +298,7 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/routeros-7.1rc4-arm.n
 </li>
 </ul>
 <hr>
-<hr>
-<li>安裝Container套件</li>  
+<li> 安裝Container套件 </li>  
 <ul>
 <li>下載對應你Router版本的Extra packages<br>
 下載連結:x86 <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1rc4.zip" target="_blank" rel="noopener noreferrer">https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1rc4.zip</a><br>
@@ -316,7 +317,6 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
 </ul>
 </ol>
 <hr>
-<hr>
 <h2 id="二--安裝adguardhome--pi-hole的-image">二.  安裝AdGuardHome / Pi-hole的 Image<a class="anchor ms-1" href="#二--安裝adguardhome--pi-hole的-image"><i class="fas fa-link"></i></a></h2>
 <p>AdGuardHome / pi-hole 之間2者選1安裝<br>
 因ROS目前不支援下載Docker Image, 所以我使用了<a href="https://manjaro.org/download/" target="_blank" rel="noopener noreferrer">Manjaro Linux</a>來下載<br>
@@ -330,7 +330,6 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">systemctl start docker
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1">#啟動Docker股務</span>
 </span></span></code></pre></div><hr>
-<hr>
 <li>下載 AdGuardHome 的 Image</li>
 <p>記得把下面的SHA256碼更改為下方連結裹對應你router cpu架構的版本<br>
 (下面以hAP ac²的armv7 為例 )<br>
@@ -346,7 +345,6 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">docker save adguard/adguardhome &gt; ~/Downloads/adguardhome.tar
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1">#封裝成tar檔,并儲到指定的目的地</span>
 </span></span></code></pre></div><hr>
-<hr>
 <li>上傳和安裝 AdGuardHome</li>
 <p>把下載的tar檔(大約200MiB) 上傳到router或USB記憶體, 再在router執行下列指令<br>
 !!! 注意!!! hAP ac²只有不到15.3MiB ROM空間,所以一定放到USB記憶體<br>
@@ -360,7 +358,6 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
 </span></span><span class="line"><span class="ln">7</span><span class="cl">/container/mounts/add <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;opt&#34;</span> <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;disk1/adguardhome/opt&#34;</span> <span class="nv">dst</span><span class="o">=</span><span class="s2">&#34;/opt&#34;</span>
 </span></span><span class="line"><span class="ln">8</span><span class="cl">/container/add <span class="nv">file</span><span class="o">=</span>disk1/adguardhome.tar <span class="nv">interface</span><span class="o">=</span>veth1  root-dir<span class="o">=</span>disk1/containers/  <span class="nv">mounts</span><span class="o">=</span>etc,opt <span class="nv">dns</span><span class="o">=</span>1.1.1.1 <span class="nv">hostname</span><span class="o">=</span>AdGuardHome
 </span></span></code></pre></div><hr>
-<hr>
 <li>啟動AdGuardHome Container</li>
 <ul>
 <li>查看container 狀態<br>
@@ -374,14 +371,12 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
 
 </p>
 <hr>
-<hr>
 <ul>
 <li>待解壓完成status 轉為stopped後, 輸入下列指令即可啟動AdGuardHome<br>
 如果你的AdGuardHome container的編號不是0, 記得更改為對應數字</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">/container/start <span class="m">0</span>
 </span></span></code></pre></div><hr>
-<hr>
 <ul>
 <li>在瀏覽器輸入 172.17.0.2:3000 或 172.17.0.2 , 看到像下圖的歡迎網頁就代表安裝成功!!!<br>
 <picture><img class="img-fluid" alt="img" src="/images/media/adblock/agh_login1.png" loading="lazy"
@@ -392,7 +387,6 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
 </li>
 </ul>
 </ol>
-<hr>
 <hr>
 <hr>
 <p>我們還需要在router和AdGuardHome 進行一些設定才能為裝置過濾廣告, 記得閱讀下一篇~設定篇</p>
@@ -494,6 +488,9 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
     </div>
     <div class="card-body">
       <ul class="post-list"><li>
+          <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告
+</a>
+        </li><li>
           <a href="/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
 </a>
         </li><li>
@@ -505,9 +502,6 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
         </li><li>
           <a href="/posts/ds216/ds216_p3/">[開箱]  DS216&#43; &amp; DSM6.0 開箱測評 Part 3 (Note Station, SpreadSheet)
 </a>
-        </li><li>
-          <a href="/posts/ds216/ds216_p2/">[開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 2 (File Station, Snapshot Replication, Download Station, Cloud 雲端儲存)
-</a>
         </li></ul>
     </div>
   </section><section class="recent-posts row card component">
@@ -516,7 +510,7 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
   </div>
   <div class="card-body">
     <ul class="post-list"><li>
-        <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS安裝AdGuardHome / Pi-Hole 去除有害網站和廣告
+        <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告
 </a>
       </li><li>
         <a href="/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
@@ -545,7 +539,14 @@ arm <a href="https://download.mikrotik.com/routeros/7.1rc4/all_packages-arm-7.1r
             NAS<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="/tags/synology/" class="badge rounded post-taxonomy" title="Synology">
             Synology<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="/tags/pc/" class="badge rounded post-taxonomy" title="PC">
             PC<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/" class="badge rounded post-taxonomy" title="顯示卡">
-            顯示卡<span class="badge badge-sm text-white bg-accent ms-1">2</span></a></div>
+            顯示卡<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/adguardhome/" class="badge rounded post-taxonomy" title="AdGuardHome">
+            AdGuardHome<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/docker/" class="badge rounded post-taxonomy" title="Docker">
+            Docker<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/mikrotik/" class="badge rounded post-taxonomy" title="MIkrotik">
+            MIkrotik<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/routeros/" class="badge rounded post-taxonomy" title="RouterOS">
+            RouterOS<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags" class="badge rounded post-taxonomy" title='全部'>
+          全部
+          <span class="badge badge-sm text-white bg-accent ms-1">11</span>
+        </a></div>
       </div>
     </section>
     
