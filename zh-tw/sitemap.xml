@@ -80,7 +80,7 @@
     <loc>/posts/ds216/ds216_p1/</loc>
     <lastmod>2016-07-31T19:45:41+08:00</lastmod>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>/offline/</loc>
   </url><url>
     <loc>/categories/</loc>
     <xhtml:link
@@ -99,14 +99,6 @@
                 href="/categories/"
                 />
   </url><url>
-    <loc>/contact/</loc>
-  </url><url>
-    <loc>/faq/</loc>
-  </url><url>
-    <loc>/offline/</loc>
-  </url><url>
-    <loc>/search/</loc>
-  </url><url>
     <loc>/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -123,5 +115,13 @@
                 hreflang="zh-tw"
                 href="/series/"
                 />
+  </url><url>
+    <loc>/faq/</loc>
+  </url><url>
+    <loc>/search/</loc>
+  </url><url>
+    <loc>/archives/</loc>
+  </url><url>
+    <loc>/contact/</loc>
   </url>
 </urlset>
