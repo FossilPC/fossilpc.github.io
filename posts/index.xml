@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Sun, 30 Jan 2022 01:29:33 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 19:58:01 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[安裝篇] 為Mikrotik ROS安裝AdGuardHome / pi-hole 去除有害網站和廣告</title>
+      <link>/posts/adguardhome/adguardhome1/</link>
+      <pubDate>Sun, 20 Mar 2022 19:58:01 +0800</pubDate>
+      
+      <guid>/posts/adguardhome/adguardhome1/</guid>
+      <description>RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS</description>
+    </item>
+    
     <item>
       <title>[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2</title>
       <link>/posts/rx6500xt/rx6500xt_part2/</link>
