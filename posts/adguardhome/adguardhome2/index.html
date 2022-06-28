@@ -14,7 +14,7 @@
 <meta name="description" content="進行首次登入設定 承上篇[安裝篇] 如無意外應該成功來到 AdGuardHome 歡迎頁 ! 按下 &ldquo;開始吧&rdquo; 開始我們的設定 步驟2 , 設定網路介面, 一般" /><meta name="robots" content="index, follow" /><meta itemprop="name" content="[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告">
 <meta itemprop="description" content="進行首次登入設定 承上篇[安裝篇] 如無意外應該成功來到 AdGuardHome 歡迎頁 ! 按下 &ldquo;開始吧&rdquo; 開始我們的設定 步驟2 , 設定網路介面, 一般"><meta itemprop="datePublished" content="2022-03-22T19:58:01+08:00" />
 <meta itemprop="dateModified" content="2022-03-22T19:58:01+08:00" />
-<meta itemprop="wordCount" content="1319"><meta itemprop="image" content="/images/media/adblock/agh_login1.png">
+<meta itemprop="wordCount" content="1331"><meta itemprop="image" content="/images/media/adblock/agh_login1.png">
 <meta itemprop="keywords" content="RouterOS,MIkrotik,AdGuardHome,Docker,過濾廣告&#34;," /><meta property="og:title" content="[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告" />
 <meta property="og:description" content="進行首次登入設定 承上篇[安裝篇] 如無意外應該成功來到 AdGuardHome 歡迎頁 ! 按下 &ldquo;開始吧&rdquo; 開始我們的設定 步驟2 , 設定網路介面, 一般" />
 <meta property="og:type" content="article" />
@@ -436,7 +436,13 @@ FossilisPC
 </p>
 <hr>
 <h2 id="自訂的過濾規則">自訂的過濾規則<a class="anchor ms-1" href="#自訂的過濾規則"><i class="fas fa-link"></i></a></h2>
-<p>過濾一些封鎖清單的漏網之魚</p>
+<p>用來過濾一些封鎖清單的漏網之魚 , 須用戶手動進行添加</p>
+<p><picture><img class="img-fluid" alt="img" src="/images/media/adblock/agh_login20.png" loading="lazy"
+     width="1058" height="922"
+     />
+</picture>
+
+</p>
 <hr>
 <p>例子 <br>
 test1234.me<br>
@@ -445,13 +451,7 @@ test1234.me<br>
 <hr>
 <p>||test1234.me^<br>
 會封鎖 test1234.me, <a href="https://www.test1234.me" target="_blank" rel="noopener noreferrer">www.test1234.me</a> , test1234.me/xyz.jpg<br>
-不會封鎖 abctest1234.me , test1234.i234.me<br>
-<picture><img class="img-fluid" alt="img" src="/images/media/adblock/agh_login20.png" loading="lazy"
-     width="1058" height="922"
-     />
-</picture>
-
-</p>
+不會封鎖 abctest1234.me , test1234.i234.me</p>
 <hr>
 <p>||test1234.me^<br>
 @@||test1234.me^<br>
