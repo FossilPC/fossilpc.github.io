@@ -7,9 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Sun, 20 Mar 2022 19:58:01 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Mar 2022 19:58:01 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告</title>
+      <title>[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告</title>
+      <link>/posts/adguardhome/adguardhome2/</link>
+      <pubDate>Tue, 22 Mar 2022 19:58:01 +0800</pubDate>
+      
+      <guid>/posts/adguardhome/adguardhome2/</guid>
+      <description>進行首次登入設定 承上篇[安裝篇] 如無意外應該成功來到 AdGuardHome 歡迎頁 ! 按下 &amp;ldquo;開始吧&amp;rdquo; 開始我們的設定 步驟2 , 設定網路介面, 一般</description>
+    </item>
+    
+    <item>
+      <title>[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告</title>
       <link>/posts/adguardhome/adguardhome1/</link>
       <pubDate>Sun, 20 Mar 2022 19:58:01 +0800</pubDate>
       

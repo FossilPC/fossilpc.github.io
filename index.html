@@ -218,15 +218,15 @@ FossilisPC
 <div class="col-lg-8"><div class="container p-0 mb-4">
     <div class="row p-0 m-0">
         <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators"><button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" aria-label="[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告" class="active" aria-current="true"></button><button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1"></button></div>
+            <div class="carousel-indicators"><button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" aria-label="[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告" class="active" aria-current="true"></button><button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1"></button></div>
             <div class="carousel-inner"><div class="carousel-item active">
     
     <picture>
   <source srcset="/images/media/adblock/ros_agh.webp" media="(max-width: 576px)">
-  <img class="d-block w-100" alt="[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告" src="/images/media/adblock/ros_agh.webp" loading="lazy"
+  <img class="d-block w-100" alt="[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告" src="/images/media/adblock/ros_agh.webp" loading="lazy"
     />
 </picture><div class="carousel-caption">
-                        <h5><a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告</a></h5>
+                        <h5><a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告</a></h5>
                         <div class="d-none d-lg-block">RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS</div>
                     </div>
                 </div><div class="carousel-item">
@@ -252,11 +252,40 @@ FossilisPC
     </div>
 </div><div class="container"><div class="posts mb-4"><article class="row card post component"><div class="card-header">
     <h2 class="card-title post-title">
-      <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告
+      <a href="/posts/adguardhome/adguardhome2/">[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
 </a>
     </h2>
   </div>
-  <div class="card-body"><picture><img class="img-fluid" alt="[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告" src="/images/media/adblock/ros_agh.webp" loading="lazy"/>
+  <div class="card-body"><picture><img class="img-fluid" alt="[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告" src="/images/media/adblock/agh_login1.png" loading="lazy"/>
+  </picture><div class="post-meta">
+  <span class="post-date" title="創建於 2022-03-22 19:58:01 &#43;0800 HKT。">
+    2022-03-22
+  </span><span class="post-reading-time">
+    3 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="/tags/routeros/" class="badge post-taxonomy">RouterOS</a><a href="/tags/mikrotik/" class="badge post-taxonomy">MIkrotik</a><a href="/tags/adguardhome/" class="badge post-taxonomy">AdGuardHome</a><a href="/tags/docker/" class="badge post-taxonomy">Docker</a><a href="/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/" class="badge post-taxonomy">過濾廣告&#34;</a></span>
+</div>
+<div class="post-summary">
+      <p>進行首次登入設定 承上篇[安裝篇] 如無意外應該成功來到 AdGuardHome 歡迎頁 !
+按下 “開始吧” 開始我們的設定
+步驟2 , 設定網路介面, 一般使用預設設定就好
+步驟3, 設定登入使用者和密碼
+步驟4, 安裝導覽 說明如何進行裝置上的設定 我使用了ROS DHCP 發放DNS IP, 所以可免去手動為用戶裝置設定
+步驟5 首次登入設定完成, 開啟儀表板
+儀表板主頁
+可進行各種DNS和過濾設定以及查看統計資料, 包括: 各用戶端DNS 查詢, DNS平均查詢時間, 熱門已封鎖的網域列表等…
+下圖是我使用了幾個月後的數據
+設定過濾器 設定DNS 封鎖清單
+過濾原理是把吻合封鎖清單中的域名引導到無效的IP, 令相關內容無法...</p><div><a class="btn btn-sm btn-primary btn-read-more" href="/posts/adguardhome/adguardhome2/">閱讀更多</a></div>
+    </div>
+  </div>
+</article>
+<article class="row card post component"><div class="card-header">
+    <h2 class="card-title post-title">
+      <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
+</a>
+    </h2>
+  </div>
+  <div class="card-body"><picture><img class="img-fluid" alt="[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告" src="/images/media/adblock/ros_agh.webp" loading="lazy"/>
   </picture><div class="post-meta">
   <span class="post-date" title="創建於 2022-03-20 19:58:01 &#43;0800 HKT。">
     2022-03-20
@@ -442,7 +471,7 @@ Note Station 套件中心安裝Note Station，可看到我已經使用Note Stati
     </div>
     <div class="card-body">
       <ul class="post-list"><li>
-          <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告
+          <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
 </a>
         </li><li>
           <a href="/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
@@ -464,7 +493,10 @@ Note Station 套件中心安裝Note Station，可看到我已經使用Note Stati
   </div>
   <div class="card-body">
     <ul class="post-list"><li>
-        <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS安裝AdGuardHome 去除有害網站和廣告
+        <a href="/posts/adguardhome/adguardhome2/">[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
+</a>
+      </li><li>
+        <a href="/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
 </a>
       </li><li>
         <a href="/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
@@ -474,9 +506,6 @@ Note Station 套件中心安裝Note Station，可看到我已經使用Note Stati
 </a>
       </li><li>
         <a href="/posts/ds216/ds216_p4/">[開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 4 (Photo Station, Audio Station, Video Station)
-</a>
-      </li><li>
-        <a href="/posts/ds216/ds216_p3/">[開箱]  DS216&#43; &amp; DSM6.0 開箱測評 Part 3 (Note Station, SpreadSheet)
 </a>
       </li></ul>
   </div>
@@ -491,13 +520,13 @@ Note Station 套件中心安裝Note Station，可看到我已經使用Note Stati
             評測<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="/tags/%E9%96%8B%E7%AE%B1/" class="badge rounded post-taxonomy" title="開箱">
             開箱<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="/tags/nas/" class="badge rounded post-taxonomy" title="NAS">
             NAS<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="/tags/synology/" class="badge rounded post-taxonomy" title="Synology">
-            Synology<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="/tags/pc/" class="badge rounded post-taxonomy" title="PC">
-            PC<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/" class="badge rounded post-taxonomy" title="顯示卡">
-            顯示卡<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/adguardhome/" class="badge rounded post-taxonomy" title="AdGuardHome">
-            AdGuardHome<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/docker/" class="badge rounded post-taxonomy" title="Docker">
-            Docker<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/mikrotik/" class="badge rounded post-taxonomy" title="MIkrotik">
-            MIkrotik<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/routeros/" class="badge rounded post-taxonomy" title="RouterOS">
-            RouterOS<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags" class="badge rounded post-taxonomy" title='全部'>
+            Synology<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="/tags/adguardhome/" class="badge rounded post-taxonomy" title="AdGuardHome">
+            AdGuardHome<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/docker/" class="badge rounded post-taxonomy" title="Docker">
+            Docker<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/mikrotik/" class="badge rounded post-taxonomy" title="MIkrotik">
+            MIkrotik<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/pc/" class="badge rounded post-taxonomy" title="PC">
+            PC<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/routeros/" class="badge rounded post-taxonomy" title="RouterOS">
+            RouterOS<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/" class="badge rounded post-taxonomy" title="過濾廣告&#34;">
+            過濾廣告&#34;<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags" class="badge rounded post-taxonomy" title='全部'>
           全部
           <span class="badge badge-sm text-white bg-accent ms-1">11</span>
         </a></div>
