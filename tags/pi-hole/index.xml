@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pi-hole on Hugo Bootstrap</title>
+    <link>/tags/pi-hole/</link>
+    <description>Recent content in pi-hole on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 29 Jun 2022 20:30:00 +0800</lastBuildDate><atom:link href="/tags/pi-hole/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mikrotik ROS v7.4 安裝 pi-hole</title>
+      <link>/posts/pihole/pihole/</link>
+      <pubDate>Wed, 29 Jun 2022 20:30:00 +0800</pubDate>
+      
+      <guid>/posts/pihole/pihole/</guid>
+      <description>Container 返黎啦! 經歷了8個月的回爐重鑄, Container 終於浴火重生, 再次來到 RouterOS , 並且帶來更完善的功能, 讓我們可以直接在ROS 下載 Container Image. ( 因應 Container 的關係, 我一直使用</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,17 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/adguardhome/adguardhome2/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
-  </url><url>
-    <loc>/tags/adguardhome/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
-  </url><url>
     <loc>/tags/docker/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -30,16 +24,22 @@
                 />
   </url><url>
     <loc>/tags/mikrotik/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
+  </url><url>
+    <loc>/posts/pihole/pihole/</loc>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/pi-hole/</loc>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
   </url><url>
     <loc>/tags/routeros/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -57,6 +57,12 @@
                 />
   </url><url>
     <loc>/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/</loc>
+    <lastmod>2022-06-29T20:30:00+08:00</lastmod>
+  </url><url>
+    <loc>/posts/adguardhome/adguardhome2/</loc>
+    <lastmod>2022-03-22T19:58:01+08:00</lastmod>
+  </url><url>
+    <loc>/tags/adguardhome/</loc>
     <lastmod>2022-03-22T19:58:01+08:00</lastmod>
   </url><url>
     <loc>/posts/adguardhome/adguardhome1/</loc>
