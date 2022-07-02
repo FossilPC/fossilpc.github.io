@@ -6,7 +6,7 @@
     <description>Recent content in RouterOS on FossilisPC 化石電腦的網誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
     <lastBuildDate>Wed, 29 Jun 2022 20:30:00 +0800</lastBuildDate><atom:link href="/tags/routeros/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mikrotik ROS v7.4 安裝 pi-hole</title>
