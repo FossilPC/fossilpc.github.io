@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 29 Jun 2022 20:30:00 +0800</lastBuildDate><atom:link href="/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 22:38:55 +0800</lastBuildDate><atom:link href="/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> 終於成功在 Mikrotik ROS 7.4beta 安裝 AdGuard Home</title>
+      <link>/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/</link>
+      <pubDate>Mon, 04 Jul 2022 22:38:55 +0800</pubDate>
+      
+      <guid>/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/</guid>
+      <description>前言 上篇文介紹如何在ROS 7.4beta 使用 container 運行 pi-hole , 不過 AdGrard Home 有支援廣告封鎖規則 和有快捷熱門服務封鎖開關, 所以我最後還是重投AdGrard Home 懷抱。 不過,</description>
+    </item>
+    
     <item>
       <title>Mikrotik ROS v7.4beta 安裝 pi-hole</title>
       <link>/posts/pihole/pihole/</link>
