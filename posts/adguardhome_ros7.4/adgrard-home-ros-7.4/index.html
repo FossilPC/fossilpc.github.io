@@ -229,7 +229,9 @@ FossilisPC 化石電腦的網誌
     <a class="action" href="#post-comments" role="button" aria-label="Comments" title="Comments">
   <i class="fas fa-fw fa-comments"></i>
 </a>
-    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
     
   </div>
 </div>
@@ -246,7 +248,7 @@ FossilisPC 化石電腦的網誌
   </span><span class="post-taxonomies"><a href="/tags/routeros/" class="badge post-taxonomy">RouterOS</a><a href="/tags/mikrotik/" class="badge post-taxonomy">MIkrotik</a><a href="/tags/adguardhome/" class="badge post-taxonomy">AdGuardHome</a><a href="/tags/docker/" class="badge post-taxonomy">Docker</a><a href="/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/" class="badge post-taxonomy">過濾廣告&#34;</a></span>
 </div>
 <picture><img class="post-featured-img w-100 mb-3" alt=" 終於成功在 Mikrotik ROS 7.4beta 安裝 AdGuard Home" src="/images/media/adguardhome/agh.png" loading="lazy"/>
-    </picture><div class="post-content mb-3"><h1 id="前言">前言<a class="anchor ms-1" href="#前言"><i class="fas fa-link"></i></a></h1>
+    </picture><div class="post-content mb-3"><h2 id="前言">前言<a class="anchor ms-1" href="#前言"><i class="fas fa-link"></i></a></h2>
 <p>上篇文介紹如何在ROS 7.4beta 使用 container 運行 pi-hole , 不過  AdGrard Home 有支援<a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters#basic" target="_blank" rel="noopener noreferrer">廣告封鎖規則</a> 和有快捷熱門服務封鎖開關, 所以我最後還是重投AdGrard Home 懷抱。<br>
 不過, 要在 ROS 7.4 beta5 安裝 AdGrard Home 卻不像 pi-hole 一樣容易,
 麻煩程度反而比 ROS 7.1 rc4  有過之而無不及!</p>
@@ -259,7 +261,7 @@ FossilisPC 化石電腦的網誌
 </p>
 <p>下文 (設定掛載點部分) 就會遘解如何可以解決問題, 順利運行 AdGrard Home, 還我一個潔淨的網絡!</p>
 <hr>
-<h1 id="事前準備">事前準備<a class="anchor ms-1" href="#事前準備"><i class="fas fa-link"></i></a></h1>
+<h2 id="事前準備">事前準備<a class="anchor ms-1" href="#事前準備"><i class="fas fa-link"></i></a></h2>
 <p>ROS 7.4beta 有很多 container 服務更新, 在舊版 7.14 rc4 佈署的 AdGrard Home 無法運行, 建議重新設定和部署 Container Image</p>
 <ul>
 <li>移除舊 Image, 設定和掛載點<br>
@@ -274,7 +276,7 @@ FossilisPC 化石電腦的網誌
 <li>安裝 Container package , 檔案包含在<a href="https://mikrotik.com/download" target="_blank" rel="noopener noreferrer">Extra packages</a></li>
 </ul>
 <hr>
-<h1 id="啟用-container-服務">啟用 container 服務<a class="anchor ms-1" href="#啟用-container-服務"><i class="fas fa-link"></i></a></h1>
+<h2 id="啟用-container-服務">啟用 container 服務<a class="anchor ms-1" href="#啟用-container-服務"><i class="fas fa-link"></i></a></h2>
 <ul>
 <li>
 <p>在 <a href="https://help.mikrotik.com/docs/display/ROS/Device-mode" target="_blank" rel="noopener noreferrer">Device-mode</a>    啟用 container<br>
@@ -300,7 +302,7 @@ FossilisPC 化石電腦的網誌
 
 </p>
 <hr>
-<h1 id="設定虛擬介面">設定虛擬介面<a class="anchor ms-1" href="#設定虛擬介面"><i class="fas fa-link"></i></a></h1>
+<h2 id="設定虛擬介面">設定虛擬介面<a class="anchor ms-1" href="#設定虛擬介面"><i class="fas fa-link"></i></a></h2>
 <p>虛擬介面可沿用舊版的, 如沒有的話可用以下指令設定</p>
 <ul>
 <li>建立 veth interface 及設定 IP</li>
@@ -310,7 +312,7 @@ FossilisPC 化石電腦的網誌
 </span></span><span class="line"><span class="ln">3</span><span class="cl">/ip/address/add <span class="nv">address</span><span class="o">=</span>172.17.0.1/16 <span class="nv">interface</span><span class="o">=</span>dockers
 </span></span><span class="line"><span class="ln">4</span><span class="cl">/interface/bridge/port add <span class="nv">bridge</span><span class="o">=</span>dockers <span class="nv">interface</span><span class="o">=</span>veth1
 </span></span></code></pre></div><hr>
-<h1 id="新增文件夾">新增文件夾<a class="anchor ms-1" href="#新增文件夾"><i class="fas fa-link"></i></a></h1>
+<h2 id="新增文件夾">新增文件夾<a class="anchor ms-1" href="#新增文件夾"><i class="fas fa-link"></i></a></h2>
 <p>目前 ROS v7.4 beta5 版本 因為不會在設定掛載點時自動新增文件夾,  就算你手動用 ftp 或用 tool fetch 下戴的方式新增文件夾, 都會因權限問題而一樣無法運行。  mkdir -p -m 777 {adguardhome/work,adguardhome/conf}
 目前我的解決方法是把用來放置 container 的 usb 記憶體, 插到 linux pc 上手動新增文件夾並賦予所有用戶 read , write , execute 權限, 再插回router。這樣的做法可能不太安全, 不過在 mikrotik 更新前只好頂硬上。<br>
 如果你是直接安裝 container 在 router 的 flash 空間, 你用下列的指令後把新增的文件夾經 winbox &gt; file 上載到 router 應該就可以。如像我使用usb的不能在 file 把文件夾拉到usb 空間。</p>
@@ -325,11 +327,11 @@ FossilisPC 化石電腦的網誌
 
 </p>
 <hr>
-<h1 id="設定掛載點">設定掛載點<a class="anchor ms-1" href="#設定掛載點"><i class="fas fa-link"></i></a></h1>
+<h2 id="設定掛載點">設定掛載點<a class="anchor ms-1" href="#設定掛載點"><i class="fas fa-link"></i></a></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">/container/mounts/add <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;work&#34;</span> <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;disk1/adguardhome/work&#34;</span> <span class="nv">dst</span><span class="o">=</span><span class="s2">&#34;/opt/adguardhome/work&#34;</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">/container/mounts/add <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;conf&#34;</span> <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;disk1/adguardhome/conf&#34;</span> <span class="nv">dst</span><span class="o">=</span><span class="s2">&#34;/opt/adguardhome/conf&#34;</span>
 </span></span></code></pre></div><hr>
-<h1 id="下載和佈署-container">下載和佈署 container<a class="anchor ms-1" href="#下載和佈署-container"><i class="fas fa-link"></i></a></h1>
+<h2 id="下載和佈署-container">下載和佈署 container<a class="anchor ms-1" href="#下載和佈署-container"><i class="fas fa-link"></i></a></h2>
 <ul>
 <li>指定 Container 鏡像倉庫</li>
 </ul>
@@ -339,7 +341,7 @@ FossilisPC 化石電腦的網誌
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">/container/add remote-image=adguard/adguardhome:latest interface=veth1 root-dir=disk1/containers/ mounts=work,conf  hostname=AdGuardHome dns=1.1.1.1
 </span></span></code></pre></div><hr>
-<h1 id="運行-container-image">運行 Container Image<a class="anchor ms-1" href="#運行-container-image"><i class="fas fa-link"></i></a></h1>
+<h2 id="運行-container-image">運行 Container Image<a class="anchor ms-1" href="#運行-container-image"><i class="fas fa-link"></i></a></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">/container/start 0
 </span></span></code></pre></div><p><picture><img class="img-fluid" alt="img" src="/images/media/adguardhome/ros3.png" loading="lazy"
      width="1424" height="174"
@@ -348,7 +350,7 @@ FossilisPC 化石電腦的網誌
 
 </p>
 <hr>
-<h1 id="總結">總結<a class="anchor ms-1" href="#總結"><i class="fas fa-link"></i></a></h1>
+<h2 id="總結">總結<a class="anchor ms-1" href="#總結"><i class="fas fa-link"></i></a></h2>
 <p>終於成功回到可愛又迷人的 AdGrard Home 頁面<br>
 <a href="http://172.17.0.2:3000" target="_blank" rel="noopener noreferrer">http://172.17.0.2:3000</a><br>
 <picture><img class="img-fluid" alt="img" src="/images/media/adguardhome/agh_login.png" loading="lazy"
@@ -444,7 +446,26 @@ FossilisPC 化石電腦的網誌
 </div>
   </div>
 </div>
-<section class="featured-posts row card component">
+<div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">目錄</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#事前準備">事前準備</a></li>
+    <li><a href="#啟用-container-服務">啟用 container 服務</a></li>
+    <li><a href="#設定虛擬介面">設定虛擬介面</a></li>
+    <li><a href="#新增文件夾">新增文件夾</a></li>
+    <li><a href="#設定掛載點">設定掛載點</a></li>
+    <li><a href="#下載和佈署-container">下載和佈署 container</a></li>
+    <li><a href="#運行-container-image">運行 Container Image</a></li>
+    <li><a href="#總結">總結</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="featured-posts row card component">
     <div class="card-header">
       <h2 class="card-title">精選文章</h2>
     </div>
