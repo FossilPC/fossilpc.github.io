@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RouterOS on FossilisPC 化石電腦的網誌</title>
-    <link>/tags/routeros/</link>
+    <link>https://fossilispc.github.io/tags/routeros/</link>
     <description>Recent content in RouterOS on FossilisPC 化石電腦的網誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 04 Jul 2022 22:38:55 +0800</lastBuildDate><atom:link href="/tags/routeros/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 22:38:55 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/routeros/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> 終於成功在 Mikrotik ROS 7.4beta 安裝 AdGuard Home</title>
-      <link>/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/</link>
+      <link>https://fossilispc.github.io/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/</link>
       <pubDate>Mon, 04 Jul 2022 22:38:55 +0800</pubDate>
       
-      <guid>/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/</guid>
+      <guid>https://fossilispc.github.io/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/</guid>
       <description>前言 上篇文介紹如何在ROS 7.4beta 使用 container 運行 pi-hole , 不過 AdGrard Home 有支援廣告封鎖規則 和有快捷熱門服務封鎖開關, 所以我最後還是重投AdGrard Home 懷抱。 不過,</description>
     </item>
     
     <item>
       <title>Mikrotik ROS v7.4beta 安裝 pi-hole</title>
-      <link>/posts/pihole/pihole/</link>
+      <link>https://fossilispc.github.io/posts/pihole/pihole/</link>
       <pubDate>Wed, 29 Jun 2022 20:30:00 +0800</pubDate>
       
-      <guid>/posts/pihole/pihole/</guid>
+      <guid>https://fossilispc.github.io/posts/pihole/pihole/</guid>
       <description>Container 返黎啦! Container 返黎 RouterOS v7.4beta 啦! 經歷了8個月的回爐重鑄, Container 終於浴火重生, 再次來到 ROS , 並且帶來更完善的功能, 讓我們可以直接在 ROS 下載 Container Image. ( 因應 Container 的關係,</description>
     </item>
     
     <item>
       <title>[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告</title>
-      <link>/posts/adguardhome/adguardhome2/</link>
+      <link>https://fossilispc.github.io/posts/adguardhome/adguardhome2/</link>
       <pubDate>Tue, 22 Mar 2022 19:58:01 +0800</pubDate>
       
-      <guid>/posts/adguardhome/adguardhome2/</guid>
+      <guid>https://fossilispc.github.io/posts/adguardhome/adguardhome2/</guid>
       <description>進行首次登入設定 承上篇[安裝篇] 如無意外應該成功來到 AdGuardHome 歡迎頁 ! 按下 &amp;ldquo;開始吧&amp;rdquo; 開始我們的設定 步驟2 , 設定網路介面, 一般</description>
     </item>
     
     <item>
       <title>[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告</title>
-      <link>/posts/adguardhome/adguardhome1/</link>
+      <link>https://fossilispc.github.io/posts/adguardhome/adguardhome1/</link>
       <pubDate>Sun, 20 Mar 2022 19:58:01 +0800</pubDate>
       
-      <guid>/posts/adguardhome/adguardhome1/</guid>
+      <guid>https://fossilispc.github.io/posts/adguardhome/adguardhome1/</guid>
       <description>RouterOS臨來大更新到 V7, 一併把使用了多年的Linux Kernel 3.3 更新到4.14, 也帶來更多的軟硬支援。 RouterOS 7.1 RC3 加入支援運行Docker container, 令ROS</description>
     </item>
     

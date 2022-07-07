@@ -2,117 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>標籤 on FossilisPC 化石電腦的網誌</title>
-    <link>/tags/</link>
+    <link>https://fossilispc.github.io/tags/</link>
     <description>Recent content in 標籤 on FossilisPC 化石電腦的網誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 04 Jul 2022 22:38:55 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 22:38:55 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AdGuardHome</title>
-      <link>/tags/adguardhome/</link>
+      <link>https://fossilispc.github.io/tags/adguardhome/</link>
       <pubDate>Mon, 04 Jul 2022 22:38:55 +0800</pubDate>
       
-      <guid>/tags/adguardhome/</guid>
+      <guid>https://fossilispc.github.io/tags/adguardhome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>/tags/docker/</link>
+      <link>https://fossilispc.github.io/tags/docker/</link>
       <pubDate>Mon, 04 Jul 2022 22:38:55 +0800</pubDate>
       
-      <guid>/tags/docker/</guid>
+      <guid>https://fossilispc.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MIkrotik</title>
-      <link>/tags/mikrotik/</link>
+      <link>https://fossilispc.github.io/tags/mikrotik/</link>
       <pubDate>Mon, 04 Jul 2022 22:38:55 +0800</pubDate>
       
-      <guid>/tags/mikrotik/</guid>
+      <guid>https://fossilispc.github.io/tags/mikrotik/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RouterOS</title>
-      <link>/tags/routeros/</link>
+      <link>https://fossilispc.github.io/tags/routeros/</link>
       <pubDate>Mon, 04 Jul 2022 22:38:55 +0800</pubDate>
       
-      <guid>/tags/routeros/</guid>
+      <guid>https://fossilispc.github.io/tags/routeros/</guid>
       <description></description>
     </item>
     
     <item>
       <title>過濾廣告&#34;</title>
-      <link>/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/</link>
+      <link>https://fossilispc.github.io/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/</link>
       <pubDate>Mon, 04 Jul 2022 22:38:55 +0800</pubDate>
       
-      <guid>/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/</guid>
+      <guid>https://fossilispc.github.io/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pi-hole</title>
-      <link>/tags/pi-hole/</link>
+      <link>https://fossilispc.github.io/tags/pi-hole/</link>
       <pubDate>Wed, 29 Jun 2022 20:30:00 +0800</pubDate>
       
-      <guid>/tags/pi-hole/</guid>
+      <guid>https://fossilispc.github.io/tags/pi-hole/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PC</title>
-      <link>/tags/pc/</link>
+      <link>https://fossilispc.github.io/tags/pc/</link>
       <pubDate>Sun, 30 Jan 2022 01:29:33 +0800</pubDate>
       
-      <guid>/tags/pc/</guid>
+      <guid>https://fossilispc.github.io/tags/pc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>評測</title>
-      <link>/tags/%E8%A9%95%E6%B8%AC/</link>
+      <link>https://fossilispc.github.io/tags/%E8%A9%95%E6%B8%AC/</link>
       <pubDate>Sun, 30 Jan 2022 01:29:33 +0800</pubDate>
       
-      <guid>/tags/%E8%A9%95%E6%B8%AC/</guid>
+      <guid>https://fossilispc.github.io/tags/%E8%A9%95%E6%B8%AC/</guid>
       <description></description>
     </item>
     
     <item>
       <title>開箱</title>
-      <link>/tags/%E9%96%8B%E7%AE%B1/</link>
+      <link>https://fossilispc.github.io/tags/%E9%96%8B%E7%AE%B1/</link>
       <pubDate>Sun, 30 Jan 2022 01:29:33 +0800</pubDate>
       
-      <guid>/tags/%E9%96%8B%E7%AE%B1/</guid>
+      <guid>https://fossilispc.github.io/tags/%E9%96%8B%E7%AE%B1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>顯示卡</title>
-      <link>/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/</link>
+      <link>https://fossilispc.github.io/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/</link>
       <pubDate>Sun, 30 Jan 2022 01:29:33 +0800</pubDate>
       
-      <guid>/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/</guid>
+      <guid>https://fossilispc.github.io/tags/%E9%A1%AF%E7%A4%BA%E5%8D%A1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NAS</title>
-      <link>/tags/nas/</link>
+      <link>https://fossilispc.github.io/tags/nas/</link>
       <pubDate>Thu, 04 Aug 2016 11:58:00 +0800</pubDate>
       
-      <guid>/tags/nas/</guid>
+      <guid>https://fossilispc.github.io/tags/nas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Synology</title>
-      <link>/tags/synology/</link>
+      <link>https://fossilispc.github.io/tags/synology/</link>
       <pubDate>Thu, 04 Aug 2016 11:58:00 +0800</pubDate>
       
-      <guid>/tags/synology/</guid>
+      <guid>https://fossilispc.github.io/tags/synology/</guid>
       <description></description>
     </item>
     

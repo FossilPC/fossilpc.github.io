@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>專欄 on FossilisPC 化石電腦的網誌</title>
-    <link>/series/</link>
+    <link>https://fossilispc.github.io/series/</link>
     <description>Recent content in 專欄 on FossilisPC 化石電腦的網誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright><atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright><atom:link href="https://fossilispc.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pi-hole on FossilisPC 化石電腦的網誌</title>
-    <link>/tags/pi-hole/</link>
+    <link>https://fossilispc.github.io/tags/pi-hole/</link>
     <description>Recent content in pi-hole on FossilisPC 化石電腦的網誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 29 Jun 2022 20:30:00 +0800</lastBuildDate><atom:link href="/tags/pi-hole/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 20:30:00 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/pi-hole/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mikrotik ROS v7.4beta 安裝 pi-hole</title>
-      <link>/posts/pihole/pihole/</link>
+      <link>https://fossilispc.github.io/posts/pihole/pihole/</link>
       <pubDate>Wed, 29 Jun 2022 20:30:00 +0800</pubDate>
       
-      <guid>/posts/pihole/pihole/</guid>
+      <guid>https://fossilispc.github.io/posts/pihole/pihole/</guid>
       <description>Container 返黎啦! Container 返黎 RouterOS v7.4beta 啦! 經歷了8個月的回爐重鑄, Container 終於浴火重生, 再次來到 ROS , 並且帶來更完善的功能, 讓我們可以直接在 ROS 下載 Container Image. ( 因應 Container 的關係,</description>
     </item>
     

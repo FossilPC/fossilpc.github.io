@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PC on FossilisPC 化石電腦的網誌</title>
-    <link>/tags/pc/</link>
+    <link>https://fossilispc.github.io/tags/pc/</link>
     <description>Recent content in PC on FossilisPC 化石電腦的網誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
-    <lastBuildDate>Sun, 30 Jan 2022 01:29:33 +0800</lastBuildDate><atom:link href="/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jan 2022 01:29:33 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/pc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2</title>
-      <link>/posts/rx6500xt/rx6500xt_part2/</link>
+      <link>https://fossilispc.github.io/posts/rx6500xt/rx6500xt_part2/</link>
       <pubDate>Sun, 30 Jan 2022 01:29:33 +0800</pubDate>
       
-      <guid>/posts/rx6500xt/rx6500xt_part2/</guid>
+      <guid>https://fossilispc.github.io/posts/rx6500xt/rx6500xt_part2/</guid>
       <description>3DMark跑分&amp;遊戲benchmark 測試平台 CPU: AMD R7 1700 MB: ASRock AB350 Pro4 RAM: Galax HOF 3200c14 8GB x2 SSD: Plextor m9p+ 1TB PSU: Seasonic PRIME Ultra Titanium 650W CASE: Silverstone FT02 OS: WIN 10 pro 21H1 R7 360 fire strike跑分 RX 6500 XT</description>
     </item>
     
     <item>
       <title>[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1</title>
-      <link>/posts/rx6500xt/rx6500xt_part1/</link>
+      <link>https://fossilispc.github.io/posts/rx6500xt/rx6500xt_part1/</link>
       <pubDate>Sun, 30 Jan 2022 01:28:33 +0800</pubDate>
       
-      <guid>/posts/rx6500xt/rx6500xt_part1/</guid>
+      <guid>https://fossilispc.github.io/posts/rx6500xt/rx6500xt_part1/</guid>
       <description>前文 晶片短缺，掘礦熱潮，黃牛炒賣等因素影響下，顯示卡價 格已居高不下多時，要入手顯示卡實在頭痛！ 極不幸地 Sapphire R7 360 幾個月前開機經常沒有畫面，近來越</description>
     </item>
     
