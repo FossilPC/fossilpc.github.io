@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>硬碟 on FossilisPC 化石電腦的網誌</title>
+    <link>https://fossilispc.github.io/tags/%E7%A1%AC%E7%A2%9F/</link>
+    <description>Recent content in 硬碟 on FossilisPC 化石電腦的網誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 24 Jul 2020 23:00:00 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/%E7%A1%AC%E7%A2%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[開箱] WD ELEMENT 12TB 外置硬碟 拆盒作 NAS 內用</title>
+      <link>https://fossilispc.github.io/posts/wd-element/%E9%96%8B%E7%AE%B1-wd-element-12tb-%E5%A4%96%E7%BD%AE%E7%A1%AC%E7%A2%9F%E6%8B%86%E7%9B%92%E4%BD%9C-nas-%E5%85%A7%E7%94%A8/</link>
+      <pubDate>Fri, 24 Jul 2020 23:00:00 +0800</pubDate>
+      
+      <guid>https://fossilispc.github.io/posts/wd-element/%E9%96%8B%E7%AE%B1-wd-element-12tb-%E5%A4%96%E7%BD%AE%E7%A1%AC%E7%A2%9F%E6%8B%86%E7%9B%92%E4%BD%9C-nas-%E5%85%A7%E7%94%A8/</guid>
+      <description>簡介 因為 NAS 的空間快用完, 所以買了最便宜的非SMR 12TB 外置硬碟 – WD 12TB Elements Desktop Hard Drive HDD , 把外置盒拆開取出硬碟安裝到NAS上。 型號 WDBWLG0120HBK 容量 12 TB (實際容量 10.9 TiB)</description>
+    </item>
+    
+  </channel>
+</rss>
