@@ -63,6 +63,15 @@
     </item>
     
     <item>
+      <title>[超簡易開箱] Hioki DT4256 數位三用電表</title>
+      <link>https://fossilispc.github.io/posts/hioki/%E8%B6%85%E7%B0%A1%E6%98%93%E9%96%8B%E7%AE%B1-hioki-dt4256-%E6%95%B8%E4%BD%8D%E4%B8%89%E7%94%A8%E9%9B%BB%E8%A1%A8/</link>
+      <pubDate>Sun, 19 Dec 2021 20:00:00 +0800</pubDate>
+      
+      <guid>https://fossilispc.github.io/posts/hioki/%E8%B6%85%E7%B0%A1%E6%98%93%E9%96%8B%E7%AE%B1-hioki-dt4256-%E6%95%B8%E4%BD%8D%E4%B8%89%E7%94%A8%E9%9B%BB%E8%A1%A8/</guid>
+      <description>本人對電學幾乎是零認識 , 不過又想嘗試自己檢查維修小型電子產品, 所以購入了 Hioki DT4256 電表, 一邊用一邊學。 之於為何會選擇 Hioki DT4256 是因在 youtube 看到評價不錯 https://www.youtube.com/watch?v=0-OzK4Snj0U , 日</description>
+    </item>
+    
+    <item>
       <title>[開箱] WD ELEMENT 12TB 外置硬碟 拆盒作 NAS 內用</title>
       <link>https://fossilispc.github.io/posts/wd-element/%E9%96%8B%E7%AE%B1-wd-element-12tb-%E5%A4%96%E7%BD%AE%E7%A1%AC%E7%A2%9F%E6%8B%86%E7%9B%92%E4%BD%9C-nas-%E5%85%A7%E7%94%A8/</link>
       <pubDate>Fri, 24 Jul 2020 23:00:00 +0800</pubDate>
@@ -74,7 +83,7 @@
     <item>
       <title>[開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 4 (Photo Station, Audio Station, Video Station)</title>
       <link>https://fossilispc.github.io/posts/ds216/ds216_p4/</link>
-      <pubDate>Thu, 04 Aug 2016 11:58:00 +0800</pubDate>
+      <pubDate>Fri, 04 Aug 2017 11:58:00 +0800</pubDate>
       
       <guid>https://fossilispc.github.io/posts/ds216/ds216_p4/</guid>
       <description>Photo Station 喜歡拍攝的用者一定不可錯過Photo Station的相簿和圖片編輯功能。 套件中心安裝後可進入Photo Station。介面默認使用白色主</description>
@@ -83,7 +92,7 @@
     <item>
       <title>[開箱]  DS216&#43; &amp; DSM6.0 開箱測評 Part 3 (Note Station, SpreadSheet)</title>
       <link>https://fossilispc.github.io/posts/ds216/ds216_p3/</link>
-      <pubDate>Wed, 03 Aug 2016 15:18:10 +0800</pubDate>
+      <pubDate>Thu, 03 Aug 2017 15:18:10 +0800</pubDate>
       
       <guid>https://fossilispc.github.io/posts/ds216/ds216_p3/</guid>
       <description>DSM 為了進一步提升文書檔案編輯體驗，特別開發了兩款生產力工具，Note Station和Spreadsheet，前者用於編輯類似word的檔案，</description>
@@ -92,7 +101,7 @@
     <item>
       <title>[開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 2 (File Station, Snapshot Replication, Download Station, Cloud 雲端儲存)</title>
       <link>https://fossilispc.github.io/posts/ds216/ds216_p2/</link>
-      <pubDate>Mon, 01 Aug 2016 18:25:23 +0800</pubDate>
+      <pubDate>Tue, 01 Aug 2017 18:25:23 +0800</pubDate>
       
       <guid>https://fossilispc.github.io/posts/ds216/ds216_p2/</guid>
       <description>File Station File Station 可算是最常用的功能，所有NAS中的檔案都可透過File Station檢視、改名、移動、刪除、分享、下載等。 電腦中的檔案也可利用Fil</description>
@@ -101,7 +110,7 @@
     <item>
       <title>[開箱]  [開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 1 (安裝,Let&#39;s Encrypt電子證書，Docker DSM，病毒防護)</title>
       <link>https://fossilispc.github.io/posts/ds216/ds216_p1/</link>
-      <pubDate>Sun, 31 Jul 2016 19:45:41 +0800</pubDate>
+      <pubDate>Mon, 31 Jul 2017 19:45:41 +0800</pubDate>
       
       <guid>https://fossilispc.github.io/posts/ds216/ds216_p1/</guid>
       <description>前言 Synology 致力推出高效能、低功耗、多功能、易於使用的NAS。多年來一直保持NAS 生產商的龍頭地位。於三月Synology 正式發佈旗下NAS的操作</description>

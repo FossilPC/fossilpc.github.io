@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hioki on FossilisPC 化石電腦的網誌</title>
+    <link>https://fossilispc.github.io/tags/hioki/</link>
+    <description>Recent content in Hioki on FossilisPC 化石電腦的網誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 19 Dec 2021 20:00:00 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/hioki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[超簡易開箱] Hioki DT4256 數位三用電表</title>
+      <link>https://fossilispc.github.io/posts/hioki/%E8%B6%85%E7%B0%A1%E6%98%93%E9%96%8B%E7%AE%B1-hioki-dt4256-%E6%95%B8%E4%BD%8D%E4%B8%89%E7%94%A8%E9%9B%BB%E8%A1%A8/</link>
+      <pubDate>Sun, 19 Dec 2021 20:00:00 +0800</pubDate>
+      
+      <guid>https://fossilispc.github.io/posts/hioki/%E8%B6%85%E7%B0%A1%E6%98%93%E9%96%8B%E7%AE%B1-hioki-dt4256-%E6%95%B8%E4%BD%8D%E4%B8%89%E7%94%A8%E9%9B%BB%E8%A1%A8/</guid>
+      <description>本人對電學幾乎是零認識 , 不過又想嘗試自己檢查維修小型電子產品, 所以購入了 Hioki DT4256 電表, 一邊用一邊學。 之於為何會選擇 Hioki DT4256 是因在 youtube 看到評價不錯 https://www.youtube.com/watch?v=0-OzK4Snj0U , 日</description>
+    </item>
+    
+  </channel>
+</rss>
