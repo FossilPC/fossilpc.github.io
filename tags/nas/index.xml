@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2016-{year} FossilisPC. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 24 Jul 2020 23:00:00 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 12:20:25 +0800</lastBuildDate><atom:link href="https://fossilispc.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB ram</title>
+      <link>https://fossilispc.github.io/posts/ds216p/ds216&#43;-%E5%8D%87%E7%B4%9A-ram/</link>
+      <pubDate>Sun, 19 Sep 2021 12:20:25 +0800</pubDate>
+      
+      <guid>https://fossilispc.github.io/posts/ds216p/ds216&#43;-%E5%8D%87%E7%B4%9A-ram/</guid>
+      <description>前言 DS216+ 只有 1 GB ram, 而且長期在跑 Plex media server, VPN Server, qBittorrent 等&amp;hellip; 輕易就可佔滿記憶體, 拖慢整台機器, 所以決定在升級DSM 7.0 前把 RAM 升級 ! 注意事頂 拆機升</description>
+    </item>
+    
     <item>
       <title>[開箱] WD ELEMENT 12TB 外置硬碟 拆盒作 NAS 內用</title>
       <link>https://fossilispc.github.io/posts/wd-element/%E9%96%8B%E7%AE%B1-wd-element-12tb-%E5%A4%96%E7%BD%AE%E7%A1%AC%E7%A2%9F%E6%8B%86%E7%9B%92%E4%BD%9C-nas-%E5%85%A7%E7%94%A8/</link>

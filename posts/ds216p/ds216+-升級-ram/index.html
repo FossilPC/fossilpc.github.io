@@ -1,0 +1,692 @@
+<!doctype html><html class="position-relative" itemscope itemtype="http://schema.org/WebPage" lang="zh-tw"
+  
+   data-palette="blue"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB ram - FossilisPC 化石電腦的網誌</title><link rel="apple-touch-icon" href="https://fossilispc.github.io/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="https://fossilispc.github.io/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://fossilispc.github.io/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://fossilispc.github.io/images/icons/favicon.ico">
+<link rel="manifest" href="https://fossilispc.github.io/manifest.json">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJPGQNKGGL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJPGQNKGGL');
+</script>
+<meta name="keywords" content="" />
+<meta name="description" content="前言 DS216&#43; 只有 1 GB ram, 而且長期在跑 Plex media server, VPN Server, qBittorrent 等&hellip; 輕易就可佔滿記憶體, 拖慢整台機器, 所以決定在升級DSM 7.0 前把 RAM 升級 ! 注意事頂 拆機升" /><meta name="robots" content="index, follow" /><meta itemprop="name" content=" 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB ram">
+<meta itemprop="description" content="前言 DS216&#43; 只有 1 GB ram, 而且長期在跑 Plex media server, VPN Server, qBittorrent 等&hellip; 輕易就可佔滿記憶體, 拖慢整台機器, 所以決定在升級DSM 7.0 前把 RAM 升級 ! 注意事頂 拆機升"><meta itemprop="datePublished" content="2021-09-19T12:20:25+08:00" />
+<meta itemprop="dateModified" content="2021-09-19T12:20:25+08:00" />
+<meta itemprop="wordCount" content="441"><meta itemprop="image" content="https://fossilispc.github.io/images/media/DS216p/ds01.JPG">
+<meta itemprop="keywords" content="Synology,NAS,DIY," /><meta property="og:title" content=" 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB ram" />
+<meta property="og:description" content="前言 DS216&#43; 只有 1 GB ram, 而且長期在跑 Plex media server, VPN Server, qBittorrent 等&hellip; 輕易就可佔滿記憶體, 拖慢整台機器, 所以決定在升級DSM 7.0 前把 RAM 升級 ! 注意事頂 拆機升" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fossilispc.github.io/posts/ds216p/ds216&#43;-%E5%8D%87%E7%B4%9A-ram/" /><meta property="og:image" content="https://fossilispc.github.io/images/media/DS216p/ds01.JPG" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-19T12:20:25+08:00" />
+<meta property="article:modified_time" content="2021-09-19T12:20:25+08:00" /><meta property="og:site_name" content="FossilisPC 化石電腦的網誌" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://fossilispc.github.io/images/media/DS216p/ds01.JPG"/>
+
+<meta name="twitter:title" content=" 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB ram"/>
+<meta name="twitter:description" content="前言 DS216&#43; 只有 1 GB ram, 而且長期在跑 Plex media server, VPN Server, qBittorrent 等&hellip; 輕易就可佔滿記憶體, 拖慢整台機器, 所以決定在升級DSM 7.0 前把 RAM 升級 ! 注意事頂 拆機升"/>
+<link rel="stylesheet" href="https://fossilispc.github.io/assets/main/bundle.min.3c98867ee5129aac40ae607804ff3f7995c806b4dee5146e038e4d805f8fa36c.css" integrity="sha256-PJiGfuUSmqxArmB4BP8/eZXIBrTe5RRuA45NgF+Po2w=" crossorigin="anonymous"><link rel="stylesheet" href="https://fossilispc.github.io/assets/viewer/bundle.min.f05183267bb952fbc8c63a7178364de2951614ab71d544ec1068ad36c7447ccc.css" integrity="sha256-8FGDJnu5UvvIxjpxeDZN4pUWFKtx1UTsEGitNsdEfMw=" crossorigin="anonymous"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9841412851050587"
+     crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+</head>
+  <body><script>const items=['mode','palette'];items.forEach(function(e){const t=localStorage.getItem('hbs-'+e);t&&document.body.parentElement.setAttribute('data-'+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://fossilispc.github.io/"><picture><img class="logo" alt="Logo" src="https://fossilispc.github.io/images/logo.webp" loading="lazy"
+     width="512" height="512"
+     />
+</picture>
+FossilisPC 化石電腦的網誌
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=%20%e5%82%99%e6%88%b0DSM%207.0%20%2c%20%e7%82%ba%20DS216%2b%20%e5%8d%87%e7%b4%9a%e5%88%b0%208GB%20ram&url=https%3a%2f%2ffossilispc.github.io%2fposts%2fds216p%2fds216%2b-%25E5%258D%2587%25E7%25B4%259A-ram%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffossilispc.github.io%2fposts%2fds216p%2fds216%2b-%25E5%258D%2587%25E7%25B4%259A-ram%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">設置</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+<div class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> 模式</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</div>
+
+
+<div class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="藍色"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="藍灰色"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="棕色"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="青色"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="綠色"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="靛青色"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="橙色"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="粉色"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="紫色"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="紅色"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="藍綠色"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="黃色"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</div>
+<div class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-chevron-circle-down" data-fa-transform="rotate-90"></i></span> 返回
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 刷新
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> 複製連結
+  </a><a class="action action-social-share" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 分享
+  </a></div>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="https://fossilispc.github.io/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://fossilispc.github.io/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://fossilispc.github.io/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>歸檔
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://fossilispc.github.io/categories/">
+            <i class="fas fa-fw fa-folder"></i>分類
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://fossilispc.github.io/tags/">
+            <i class="fas fa-fw fa-tags"></i>標籤
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-fw fa-chevron-circle-down"></i>Support
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownSupport"><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">
+                Repository
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap/discussions/new" target="_blank" rel="noopener noreferrer">
+                Discussions
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=feature_request.md" target="_blank" rel="noopener noreferrer">
+                Features Request
+              </a>
+            </li><li><hr class="dropdown-divider"></li><li>
+              <a class="dropdown-item"
+                href="https://fossilispc.github.io/faq/">
+                常見問題
+              </a>
+            </li></ul>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://fossilispc.github.io/">主頁</a></li><li class="breadcrumb-item"><a href="https://fossilispc.github.io/posts/">文章</a></li><li class="breadcrumb-item active"> 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB Ram</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper position-sticky">
+  <div class="d-flex flex-column component rounded post-panel position-absolute">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    
+    <a class="action" href="#post-copyright" role="button" aria-label="Copyright" title="Copyright">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    <a class="action" href="#post-comments" role="button" aria-label="Comments" title="Comments">
+  <i class="fas fa-fw fa-comments"></i>
+</a>
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title"> 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB Ram
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="創建於 2021-09-19 12:20:25 &#43;0800 HKT。">
+    2021-09-19
+  </span><span class="post-reading-time">
+    1 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="https://fossilispc.github.io/tags/synology/" class="badge post-taxonomy">Synology</a><a href="https://fossilispc.github.io/tags/nas/" class="badge post-taxonomy">NAS</a><a href="https://fossilispc.github.io/tags/diy/" class="badge post-taxonomy">DIY</a></span>
+</div>
+<picture><img class="post-featured-img w-100 mb-3" alt=" 備戰DSM 7.0 , 為 DS216&#43; 升級到 8GB ram" src="https://fossilispc.github.io/images/media/DS216p/ds01.JPG" loading="lazy"/>
+    </picture><div class="post-content mb-3"><h2 id="前言">前言<a class="anchor ms-1" href="#前言"><i class="fas fa-link"></i></a></h2>
+<p>DS216+ 只有 1 GB ram, 而且長期在跑 Plex media server, VPN Server,  qBittorrent 等&hellip;  輕易就可佔滿記憶體, 拖慢整台機器, 所以決定在升級DSM 7.0 前把 RAM 升級 !</p>
+<ul>
+<li>注意事頂<br>
+拆機升級ram , 會令 DS216+ 保養失效<br>
+DS216+ 支授的記憶體規格為 <code>**單條 DDR3L SODIMM**</code></li>
+</ul>
+<p>Synolody 自家的 ram 應該有最好的相客性,  不過價錢比較貴, 所以我隨便選了g.skill 的 ram  。該 RAM 不在官方 QVL 中, 要實際安裝測試才知相容性如何。<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds24.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds24.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds24.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds24.JPG" loading="lazy"
+     width="1697" height="722"
+     />
+</picture>
+
+<br>
+</br></p>
+<hr>
+<h2 id="拆機">拆機<a class="anchor ms-1" href="#拆機"><i class="fas fa-link"></i></a></h2>
+<p>首自把硬碟移除<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds02.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds02.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds02.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds02.JPG" loading="lazy"
+     width="1883" height="818"
+     />
+</picture>
+
+<br>
+</br><br>
+轉到背面, 把5粒螺絲擰開<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds03.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds03.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds03.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds03.JPG" loading="lazy"
+     width="1064" height="1143"
+     />
+</picture>
+
+<br>
+</br><br>
+移除風扇罩<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds04.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds04.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds04.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds04.JPG" loading="lazy"
+     width="1623" height="1181"
+     />
+</picture>
+
+<br>
+</br><br>
+撬開2個卡榫<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds05.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds05.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds05.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds05.JPG" loading="lazy"
+     width="1602" height="1264"
+     />
+</picture>
+
+<br>
+</br><br>
+推出另外半邊<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds06.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds06.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds06.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds06.JPG" loading="lazy"
+     width="1881" height="1209"
+     />
+</picture>
+
+<br>
+</br><br>
+移除外罩<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds07.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds07.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds07.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds07.JPG" loading="lazy"
+     width="2075" height="1264"
+     />
+</picture>
+
+<br>
+</br><br>
+移除螺絲 把黑色支架移除<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds08.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds08.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds08.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds08.JPG" loading="lazy"
+     width="1625" height="1255"
+     />
+</picture>
+
+<br>
+</br><br>
+移除螺絲 把灰色支架移除<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds09.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds09.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds09.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds09.JPG" loading="lazy"
+     width="1625" height="1098"
+     />
+</picture>
+
+<br>
+</br></p>
+<p>撕開金屬膠紙<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds10.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds10.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds10.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds10.JPG" loading="lazy"
+     width="1111" height="707"
+     />
+</picture>
+
+<br>
+</br></p>
+<p>移除4粒螺絲<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds11.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds11.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds11.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds11.JPG" loading="lazy"
+     width="1111" height="707"
+     />
+</picture>
+
+<br>
+</br></p>
+<p>就可把主版拉起, 並轉到背面<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds12.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds12.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds12.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds12.JPG" loading="lazy"
+     width="1081" height="1258"
+     />
+</picture>
+
+<br>
+</br></p>
+<hr>
+<h2 id="移除舊ram--安裝新-ram">移除舊ram & 安裝新 ram<a class="anchor ms-1" href="#移除舊ram--安裝新-ram"><i class="fas fa-link"></i></a></h2>
+<p>向外撥開卡榫<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds13.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds13.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds13.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds13.JPG" loading="lazy"
+     width="1736" height="937"
+     />
+</picture>
+
+<br>
+</br><br>
+ram 會向上彈起, 將 ram 拿掉<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds14.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds14.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds14.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds14.JPG" loading="lazy"
+     width="1736" height="937"
+     />
+</picture>
+
+<br>
+</br></p>
+<p>把新 ram  斜插進去<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds15.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds15.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds15.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds15.JPG" loading="lazy"
+     width="1736" height="937"
+     />
+</picture>
+
+<br>
+</br><br>
+向下按 會聽到「卡」一聲<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds16.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds16.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds16.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds16.JPG" loading="lazy"
+     width="1421" height="937"
+     />
+</picture>
+
+<br>
+</br><br>
+把NAS還原裝回去 <br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds18.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds18.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds18.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds18.JPG" loading="lazy"
+     width="512" height="288"
+     />
+</picture>
+
+<br>
+</br><br>
+開機成功<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds17.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds17.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds17.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds17.JPG" loading="lazy"
+     width="615" height="713"
+     />
+</picture>
+
+<br>
+</br></p>
+<hr>
+<h2 id="測試">測試<a class="anchor ms-1" href="#測試"><i class="fas fa-link"></i></a></h2>
+<p>由於我用的 ram 不在 QVL 中, 所以用了 <a href="https://www.synology.com/zh-tw/support/download" target="_blank" rel="noopener noreferrer">Synology Assistant</a> 來測試  ram 的穩定性  , 過程中會自動重啟<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds19.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds19.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds19.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds19.JPG" loading="lazy"
+     width="1103" height="766"
+     />
+</picture>
+
+<br>
+</br><br>
+可看到測試進程<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds20.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds20.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds20.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds20.JPG" loading="lazy"
+     width="1226" height="907"
+     />
+</picture>
+
+<br>
+</br><br>
+測試完成後沒有發現問題 <br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds21.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds21.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds21.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds21.JPG" loading="lazy"
+     width="1226" height="907"
+     />
+</picture>
+
+<br>
+</br><br>
+順手升級成 DSM 7<br>
+再去到「資源監控」&gt; 「記憶體」查看 ram 使用率<br>
+剛登入沒有運行 media server 和下載器的
+又狀況已佔用了1.4 GB RAM<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds22.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds22.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds22.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds22.JPG" loading="lazy"
+     width="1153" height="791"
+     />
+</picture>
+
+<br>
+</br></p>
+<p>拆下來的原裝 ram ,  希望之後不會再派上用場!<br>
+<picture><source srcset="https://fossilispc.github.io/images/media/DS216p/ds23.JPG" type="image/avif" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds23.JPG" type="image/webp" /><source srcset="https://fossilispc.github.io/images/media/DS216p/ds23.JPG" type="image/jxl" /><img class="img-fluid" alt="img" src="https://fossilispc.github.io/images/media/DS216p/ds23.JPG" loading="lazy"
+     width="1421" height="706"
+     />
+</picture>
+
+<br>
+</br></p>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-circle-down post-prev-icon" data-fa-transform="rotate-90"></i>
+    <a href="https://fossilispc.github.io/posts/wd-element/%E9%96%8B%E7%AE%B1-wd-element-12tb-%E5%A4%96%E7%BD%AE%E7%A1%AC%E7%A2%9F%E6%8B%86%E7%9B%92%E4%BD%9C-nas-%E5%85%A7%E7%94%A8/">[開箱] WD ELEMENT 12TB 外置硬碟 拆盒作 NAS 內用
+</a>
+  </div><div class="post-nav post-next">
+    <a href="https://fossilispc.github.io/posts/hioki/%E8%B6%85%E7%B0%A1%E6%98%93%E9%96%8B%E7%AE%B1-hioki-dt4256-%E6%95%B8%E4%BD%8D%E4%B8%89%E7%94%A8%E9%9B%BB%E8%A1%A8/">[超簡易開箱] Hioki DT4256 數位三用電表
+</a>
+    <i class="fas fa-fw fa-chevron-circle-down post-next-icon" data-fa-transform="rotate-270"></i>
+  </div></div></div>
+</article><div class="post-copyright mb-3 row card component" id="post-copyright">
+    <div class="card-header">
+        <h2 class="card-title">版權</h2>
+    </div>
+    <div class="card-body"><a class="d-flex align-items-center flex-column" target="_blank" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">
+  <span><i class="fab fa-fw fa-2x fa-creative-commons"></i><i class="fab fa-fw fa-2x fa-creative-commons-by"></i><i class="fab fa-fw fa-2x fa-creative-commons-nc"></i><i class="fab fa-fw fa-2x fa-creative-commons-nd"></i></span>
+  CC BY-NC-ND 4.0 
+</a>
+
+
+    </div>
+</div><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">相關文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="https://fossilispc.github.io/posts/wd-element/%E9%96%8B%E7%AE%B1-wd-element-12tb-%E5%A4%96%E7%BD%AE%E7%A1%AC%E7%A2%9F%E6%8B%86%E7%9B%92%E4%BD%9C-nas-%E5%85%A7%E7%94%A8/">[開箱] WD ELEMENT 12TB 外置硬碟 拆盒作 NAS 內用
+</a>
+          <span class="float-end post-date">2020-07-24
+</span>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/ds216/ds216_p4/">[開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 4 (Photo Station, Audio Station, Video Station)
+</a>
+          <span class="float-end post-date">2017-08-04
+</span>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/ds216/ds216_p3/">[開箱]  DS216&#43; &amp; DSM6.0 開箱測評 Part 3 (Note Station, SpreadSheet)
+</a>
+          <span class="float-end post-date">2017-08-03
+</span>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/ds216/ds216_p2/">[開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 2 (File Station, Snapshot Replication, Download Station, Cloud 雲端儲存)
+</a>
+          <span class="float-end post-date">2017-08-01
+</span>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/ds216/ds216_p1/">[開箱]  [開箱] DS216&#43; &amp; DSM6.0 開箱測評 Part 1 (安裝,Let&#39;s Encrypt電子證書，Docker DSM，病毒防護)
+</a>
+          <span class="float-end post-date">2017-07-31
+</span>
+        </li></ul>
+    </div>
+  </section><div class="card component row post-comments" id="post-comments">
+  <div class="card-header">
+    <h2 class="card-title">評論</h2>
+  </div>
+  <div class="card-body"><script src="https://utteranc.es/client.js"
+  repo="FossilisPC/fossilispc.github.io"
+  issue-term="pathname"
+  label="comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div>
+</div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <div class="card row text-center profile component">
+  <div class="card-body">
+    <div class="col-12 d-flex align-items-center justify-content-center"><picture><img class="profile-avatar rounded-circle" alt="FossilisPC" src="https://fossilispc.github.io/images/profile.webp" loading="lazy" data-viewer-invisible
+     width="512" height="512"
+     />
+</picture>
+</div>
+    <div class="col-12 profile-meta"><div class="profile-name">FossilisPC</div><div class="profile-bio">電子娛樂 科技產品愛好者</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>HK</div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="https://fossilispc.github.io/about/">About</a></div><div class="profile-contact"><i class="fas fa-fw fa-question-circle"></i><a href="https://fossilispc.github.io/contact/">聯繫我們</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:fossilispc@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://fossilispc.github.io/index.xml" title="RSS" rel="noopener noreferrer">
+    <i class="fas fa-fw fa-2x fa-rss"></i>
+  </a></nav>
+</div>
+  </div>
+</div>
+<div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">目錄</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#拆機">拆機</a></li>
+    <li><a href="#移除舊ram--安裝新-ram">移除舊ram &amp; 安裝新 ram</a></li>
+    <li><a href="#測試">測試</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="featured-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">精選文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="https://fossilispc.github.io/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/"> 終於成功在 Mikrotik ROS 7.4beta 安裝 AdGuard Home
+</a>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
+</a>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
+</a>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/rx6500xt/rx6500xt_part1/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 1
+</a>
+        </li><li>
+          <a href="https://fossilispc.github.io/posts/hioki/%E8%B6%85%E7%B0%A1%E6%98%93%E9%96%8B%E7%AE%B1-hioki-dt4256-%E6%95%B8%E4%BD%8D%E4%B8%89%E7%94%A8%E9%9B%BB%E8%A1%A8/">[超簡易開箱] Hioki DT4256 數位三用電表
+</a>
+        </li></ul>
+    </div>
+  </section><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">最近文章</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="https://fossilispc.github.io/posts/adguardhome_ros7.4/adgrard-home-ros-7.4/"> 終於成功在 Mikrotik ROS 7.4beta 安裝 AdGuard Home
+</a>
+      </li><li>
+        <a href="https://fossilispc.github.io/posts/pihole/pihole/">Mikrotik ROS V7.4beta 安裝 Pi-Hole
+</a>
+      </li><li>
+        <a href="https://fossilispc.github.io/posts/adguardhome/adguardhome2/">[設定篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
+</a>
+      </li><li>
+        <a href="https://fossilispc.github.io/posts/adguardhome/adguardhome1/">[安裝篇] 為Mikrotik ROS 7.1 RC4 安裝AdGuardHome 去除有害網站和廣告
+</a>
+      </li><li>
+        <a href="https://fossilispc.github.io/posts/rx6500xt/rx6500xt_part2/">[開箱]  ASUS TUF Gaming RX 6500 XT  安裝在B350只有PCIe 3.0底板還可以流暢玩遊戲嗎?Part 2
+</a>
+      </li></ul>
+  </div>
+</section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://fossilispc.github.io/tags">標籤</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://fossilispc.github.io/tags/%E9%96%8B%E7%AE%B1/" class="badge rounded post-taxonomy" title="開箱">
+            開箱<span class="badge badge-sm text-white bg-accent ms-1">8</span></a><a href="https://fossilispc.github.io/tags/nas/" class="badge rounded post-taxonomy" title="NAS">
+            NAS<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="https://fossilispc.github.io/tags/synology/" class="badge rounded post-taxonomy" title="Synology">
+            Synology<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="https://fossilispc.github.io/tags/%E8%A9%95%E6%B8%AC/" class="badge rounded post-taxonomy" title="評測">
+            評測<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="https://fossilispc.github.io/tags/docker/" class="badge rounded post-taxonomy" title="Docker">
+            Docker<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="https://fossilispc.github.io/tags/mikrotik/" class="badge rounded post-taxonomy" title="MIkrotik">
+            MIkrotik<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="https://fossilispc.github.io/tags/routeros/" class="badge rounded post-taxonomy" title="RouterOS">
+            RouterOS<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="https://fossilispc.github.io/tags/%E9%81%8E%E6%BF%BE%E5%BB%A3%E5%91%8A/" class="badge rounded post-taxonomy" title="過濾廣告&#34;">
+            過濾廣告&#34;<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="https://fossilispc.github.io/tags/adguardhome/" class="badge rounded post-taxonomy" title="AdGuardHome">
+            AdGuardHome<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://fossilispc.github.io/tags/diy/" class="badge rounded post-taxonomy" title="DIY">
+            DIY<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://fossilispc.github.io/tags" class="badge rounded post-taxonomy" title='全部'>
+          全部
+          <span class="badge badge-sm text-white bg-accent ms-1">17</span>
+        </a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-between footer-memu mb-3"><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item"><a class="nav-link fw-bold" href="javascript: void(0);">Support
+</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i>Repository
+</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap/discussions/new" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-comments"></i>Discussions
+</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=feature_request.md" target="_blank" rel="noopener noreferrer">Features Request
+</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=bug_report.md" target="_blank" rel="noopener noreferrer">Bug Report
+</a></li><li class="nav-item"><a class="nav-link" href="/faq/"><i class="fas fa-fw fa-question-circle"></i>常見問題
+</a></li><li class="nav-item"><a class="nav-link" href="/contact/"><i class="fas fa-fw fa-info-circle"></i>聯繫我們
+</a></li></ul></li><li class="nav-item"><li class="nav-item"><a class="nav-link" href="javascript: void(0);">Docs
+</a></li></li><li class="nav-item"><li class="nav-item"><a class="nav-link" href="javascript: void(0);">Features
+</a></li></li></ul><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" href="mailto:fossilispc@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://fossilispc.github.io/index.xml" title="RSS" rel="noopener noreferrer">
+    <i class="fas fa-fw fa-2x fa-rss"></i>
+  </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2022 FossilisPC. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div>
+<a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+</a>
+</footer>
+<script src="https://fossilispc.github.io/assets/main/bundle.min.a696500add6c9eb8d09bf438c93047922bc161eea8f3e0824069a1d8c75203f3.js" integrity="sha256-ppZQCt1snrjQm/Q4yTBHkivBYe6o8&#43;CCQGmh2MdSA/M=" crossorigin="anonymous" defer></script><script src="https://fossilispc.github.io/assets/icons/bundle.min.dfcbe757302616d36e2f117823c56facf382204bf3ab9ea29dffd5f2fc56bdef.js" integrity="sha256-38vnVzAmFtNuLxF4I8VvrPOCIEvzq56inf/V8vxWve8=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('https:\/\/fossilispc.github.io\/service-worker.min.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="https://fossilispc.github.io/assets/viewer/bundle.min.5ad926b46749e67285f66e2fdbc2d7cfb2689e8d9f2fcc2f59c3f51d2a1c4506.js" integrity="sha256-WtkmtGdJ5nKF9m4v28LXz7Jono2fL8wvWcP1HSocRQY=" crossorigin="anonymous" defer></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-JJPGQNKGGL', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script data-ad-client="ca-pub-9841412851050587" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body>
+</html>
